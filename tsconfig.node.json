@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* Strict rules */
+    "strict": true,
+    "noUnusedLocals": true
+  },
+  "include": [
+    "vite.config.ts",
+    "eslint.config.js",
+    "lint-staged.config.js",
+    ".storybook/main.ts",
+    ".storybook/preview.ts"
+  ]
+}
