@@ -4,8 +4,46 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="rsk-ui - A production-ready, accessible, and customizable React Design System built with React 19, TypeScript, Tailwind CSS v4, and Storybook." />
+    <meta
+      name="description"
+      content="rsk-ui - A production-ready, accessible, and customizable React Design System built with React 19, TypeScript, Tailwind CSS v4, and Storybook."
+    />
     <title>rsk-ui - React Design System Workspace</title>
+
+    <!--
+      RSK-UI Theme Initialization Script
+      ─────────────────────────────────────────────────────────────────────────
+      This inline script runs synchronously before the browser paints anything,
+      eliminating the "flash of incorrect theme" (FOIT) that occurs when
+      JavaScript loads after the initial paint.
+
+      Strategy:
+        1. Read stored theme from localStorage
+        2. Fall back to OS prefers-color-scheme if no stored value
+        3. Apply the correct class + color-scheme to <html> before first paint
+
+      DO NOT add async/defer or move this below the <body> tag.
+    -->
+    <script>
+      (function () {
+        try {
+          var s = localStorage.getItem('rsk-ui-theme');
+          var d = 'system';
+          var t = s || d;
+          var r;
+          if (t === 'system' || !t) {
+            r = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          } else {
+            r = t;
+          }
+          var e = document.documentElement;
+          e.classList.remove('light', 'dark');
+          e.classList.add(r);
+          e.style.colorScheme = r;
+          e.setAttribute('data-theme', r);
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
