@@ -1,4 +1,4 @@
-# rsk-ui
+# RSK-UI
 
 A production-ready React 19 Design System and UI library built for speed, accessibility, scalability, and premier developer experience.
 
