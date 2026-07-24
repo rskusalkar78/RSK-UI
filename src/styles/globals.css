@@ -1,41 +1,313 @@
+@import './tokens.css';
 @import 'tailwindcss';
 
+/* ==========================================================================
+   Tailwind CSS v4 Theme — Maps RSK-UI design tokens to Tailwind utilities.
+   All utility classes (bg-*, text-*, shadow-*, etc.) are generated from
+   the CSS custom properties defined in tokens.css.
+   ========================================================================== */
+
 @theme {
+  /* ─── Fonts ───────────────────────────────────────────────────────────── */
+  --font-sans: var(--rsk-font-sans);
+  --font-mono: var(--rsk-font-mono);
+  --font-display: var(--rsk-font-display);
+
+  /* ─── Font Sizes ──────────────────────────────────────────────────────── */
+  --text-2xs: var(--rsk-text-2xs);
+  --text-xs: var(--rsk-text-xs);
+  --text-sm: var(--rsk-text-sm);
+  --text-base: var(--rsk-text-base);
+  --text-lg: var(--rsk-text-lg);
+  --text-xl: var(--rsk-text-xl);
+  --text-2xl: var(--rsk-text-2xl);
+  --text-3xl: var(--rsk-text-3xl);
+  --text-4xl: var(--rsk-text-4xl);
+  --text-5xl: var(--rsk-text-5xl);
+  --text-6xl: var(--rsk-text-6xl);
+  --text-7xl: var(--rsk-text-7xl);
+  --text-8xl: var(--rsk-text-8xl);
+  --text-9xl: var(--rsk-text-9xl);
+
+  /* ─── Font Weights ────────────────────────────────────────────────────── */
+  --font-weight-thin: var(--rsk-font-weight-thin);
+  --font-weight-extralight: var(--rsk-font-weight-extralight);
+  --font-weight-light: var(--rsk-font-weight-light);
+  --font-weight-normal: var(--rsk-font-weight-normal);
+  --font-weight-medium: var(--rsk-font-weight-medium);
+  --font-weight-semibold: var(--rsk-font-weight-semibold);
+  --font-weight-bold: var(--rsk-font-weight-bold);
+  --font-weight-extrabold: var(--rsk-font-weight-extrabold);
+  --font-weight-black: var(--rsk-font-weight-black);
+
+  /* ─── Line Heights ────────────────────────────────────────────────────── */
+  --leading-none: var(--rsk-leading-none);
+  --leading-tight: var(--rsk-leading-tight);
+  --leading-snug: var(--rsk-leading-snug);
+  --leading-normal: var(--rsk-leading-normal);
+  --leading-relaxed: var(--rsk-leading-relaxed);
+  --leading-loose: var(--rsk-leading-loose);
+
+  /* ─── Letter Spacings ─────────────────────────────────────────────────── */
+  --tracking-tighter: var(--rsk-tracking-tighter);
+  --tracking-tight: var(--rsk-tracking-tight);
+  --tracking-normal: var(--rsk-tracking-normal);
+  --tracking-wide: var(--rsk-tracking-wide);
+  --tracking-wider: var(--rsk-tracking-wider);
+  --tracking-widest: var(--rsk-tracking-widest);
+
+  /* ─── Colors — Base Palette ───────────────────────────────────────────── */
+
+  /* Neutral */
+  --color-neutral-50: hsl(var(--rsk-color-neutral-50));
+  --color-neutral-100: hsl(var(--rsk-color-neutral-100));
+  --color-neutral-200: hsl(var(--rsk-color-neutral-200));
+  --color-neutral-300: hsl(var(--rsk-color-neutral-300));
+  --color-neutral-400: hsl(var(--rsk-color-neutral-400));
+  --color-neutral-500: hsl(var(--rsk-color-neutral-500));
+  --color-neutral-600: hsl(var(--rsk-color-neutral-600));
+  --color-neutral-700: hsl(var(--rsk-color-neutral-700));
+  --color-neutral-800: hsl(var(--rsk-color-neutral-800));
+  --color-neutral-900: hsl(var(--rsk-color-neutral-900));
+  --color-neutral-950: hsl(var(--rsk-color-neutral-950));
+
+  /* Primary — Violet */
+  --color-primary-50: hsl(var(--rsk-color-primary-50));
+  --color-primary-100: hsl(var(--rsk-color-primary-100));
+  --color-primary-200: hsl(var(--rsk-color-primary-200));
+  --color-primary-300: hsl(var(--rsk-color-primary-300));
+  --color-primary-400: hsl(var(--rsk-color-primary-400));
+  --color-primary-500: hsl(var(--rsk-color-primary-500));
+  --color-primary-600: hsl(var(--rsk-color-primary-600));
+  --color-primary-700: hsl(var(--rsk-color-primary-700));
+  --color-primary-800: hsl(var(--rsk-color-primary-800));
+  --color-primary-900: hsl(var(--rsk-color-primary-900));
+  --color-primary-950: hsl(var(--rsk-color-primary-950));
+
+  /* Secondary — Indigo */
+  --color-secondary-50: hsl(var(--rsk-color-secondary-50));
+  --color-secondary-100: hsl(var(--rsk-color-secondary-100));
+  --color-secondary-200: hsl(var(--rsk-color-secondary-200));
+  --color-secondary-300: hsl(var(--rsk-color-secondary-300));
+  --color-secondary-400: hsl(var(--rsk-color-secondary-400));
+  --color-secondary-500: hsl(var(--rsk-color-secondary-500));
+  --color-secondary-600: hsl(var(--rsk-color-secondary-600));
+  --color-secondary-700: hsl(var(--rsk-color-secondary-700));
+  --color-secondary-800: hsl(var(--rsk-color-secondary-800));
+  --color-secondary-900: hsl(var(--rsk-color-secondary-900));
+  --color-secondary-950: hsl(var(--rsk-color-secondary-950));
+
+  /* Accent — Fuchsia */
+  --color-accent-50: hsl(var(--rsk-color-accent-50));
+  --color-accent-100: hsl(var(--rsk-color-accent-100));
+  --color-accent-200: hsl(var(--rsk-color-accent-200));
+  --color-accent-300: hsl(var(--rsk-color-accent-300));
+  --color-accent-400: hsl(var(--rsk-color-accent-400));
+  --color-accent-500: hsl(var(--rsk-color-accent-500));
+  --color-accent-600: hsl(var(--rsk-color-accent-600));
+  --color-accent-700: hsl(var(--rsk-color-accent-700));
+  --color-accent-800: hsl(var(--rsk-color-accent-800));
+  --color-accent-900: hsl(var(--rsk-color-accent-900));
+  --color-accent-950: hsl(var(--rsk-color-accent-950));
+
+  /* Destructive — Red */
+  --color-destructive-50: hsl(var(--rsk-color-destructive-50));
+  --color-destructive-100: hsl(var(--rsk-color-destructive-100));
+  --color-destructive-200: hsl(var(--rsk-color-destructive-200));
+  --color-destructive-300: hsl(var(--rsk-color-destructive-300));
+  --color-destructive-400: hsl(var(--rsk-color-destructive-400));
+  --color-destructive-500: hsl(var(--rsk-color-destructive-500));
+  --color-destructive-600: hsl(var(--rsk-color-destructive-600));
+  --color-destructive-700: hsl(var(--rsk-color-destructive-700));
+  --color-destructive-800: hsl(var(--rsk-color-destructive-800));
+  --color-destructive-900: hsl(var(--rsk-color-destructive-900));
+  --color-destructive-950: hsl(var(--rsk-color-destructive-950));
+
+  /* Success — Emerald */
+  --color-success-50: hsl(var(--rsk-color-success-50));
+  --color-success-100: hsl(var(--rsk-color-success-100));
+  --color-success-200: hsl(var(--rsk-color-success-200));
+  --color-success-300: hsl(var(--rsk-color-success-300));
+  --color-success-400: hsl(var(--rsk-color-success-400));
+  --color-success-500: hsl(var(--rsk-color-success-500));
+  --color-success-600: hsl(var(--rsk-color-success-600));
+  --color-success-700: hsl(var(--rsk-color-success-700));
+  --color-success-800: hsl(var(--rsk-color-success-800));
+  --color-success-900: hsl(var(--rsk-color-success-900));
+  --color-success-950: hsl(var(--rsk-color-success-950));
+
+  /* Warning — Amber */
+  --color-warning-50: hsl(var(--rsk-color-warning-50));
+  --color-warning-100: hsl(var(--rsk-color-warning-100));
+  --color-warning-200: hsl(var(--rsk-color-warning-200));
+  --color-warning-300: hsl(var(--rsk-color-warning-300));
+  --color-warning-400: hsl(var(--rsk-color-warning-400));
+  --color-warning-500: hsl(var(--rsk-color-warning-500));
+  --color-warning-600: hsl(var(--rsk-color-warning-600));
+  --color-warning-700: hsl(var(--rsk-color-warning-700));
+  --color-warning-800: hsl(var(--rsk-color-warning-800));
+  --color-warning-900: hsl(var(--rsk-color-warning-900));
+  --color-warning-950: hsl(var(--rsk-color-warning-950));
+
+  /* Info — Sky */
+  --color-info-50: hsl(var(--rsk-color-info-50));
+  --color-info-100: hsl(var(--rsk-color-info-100));
+  --color-info-200: hsl(var(--rsk-color-info-200));
+  --color-info-300: hsl(var(--rsk-color-info-300));
+  --color-info-400: hsl(var(--rsk-color-info-400));
+  --color-info-500: hsl(var(--rsk-color-info-500));
+  --color-info-600: hsl(var(--rsk-color-info-600));
+  --color-info-700: hsl(var(--rsk-color-info-700));
+  --color-info-800: hsl(var(--rsk-color-info-800));
+  --color-info-900: hsl(var(--rsk-color-info-900));
+  --color-info-950: hsl(var(--rsk-color-info-950));
+
+  /* ─── Colors — Semantic (theme-adaptive) ──────────────────────────────── */
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
   --color-border: hsl(var(--border));
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
-  --color-background: hsl(var(--background));
-  --color-foreground: hsl(var(--foreground));
 
-  --color-primary: hsl(var(--primary));
-  --color-primary-foreground: hsl(var(--primary-foreground));
+  /* ─── Border Radius ───────────────────────────────────────────────────── */
+  --radius-none: var(--rsk-radius-none);
+  --radius-xs: var(--rsk-radius-xs);
+  --radius-sm: var(--rsk-radius-sm);
+  --radius-md: var(--rsk-radius-md);
+  --radius-lg: var(--rsk-radius-lg);
+  --radius-xl: var(--rsk-radius-xl);
+  --radius-2xl: var(--rsk-radius-2xl);
+  --radius-3xl: var(--rsk-radius-3xl);
+  --radius-4xl: var(--rsk-radius-4xl);
+  --radius-full: var(--rsk-radius-full);
 
-  --color-secondary: hsl(var(--secondary));
-  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  /* ─── Shadows ─────────────────────────────────────────────────────────── */
+  --shadow-xs: var(--rsk-shadow-xs);
+  --shadow-sm: var(--rsk-shadow-sm);
+  --shadow-md: var(--rsk-shadow-md);
+  --shadow-lg: var(--rsk-shadow-lg);
+  --shadow-xl: var(--rsk-shadow-xl);
+  --shadow-2xl: var(--rsk-shadow-2xl);
+  --shadow-inner: var(--rsk-shadow-inner);
+  --shadow-none: var(--rsk-shadow-none);
+  --shadow-glow-primary: var(--rsk-shadow-glow-primary);
+  --shadow-glow-secondary: var(--rsk-shadow-glow-secondary);
+  --shadow-glow-accent: var(--rsk-shadow-glow-accent);
+  --shadow-glow-success: var(--rsk-shadow-glow-success);
+  --shadow-glow-destructive: var(--rsk-shadow-glow-destructive);
 
-  --color-destructive: hsl(var(--destructive));
-  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  /* ─── Z-Index ─────────────────────────────────────────────────────────── */
+  --z-deep: var(--rsk-z-deep);
+  --z-base: var(--rsk-z-base);
+  --z-docked: var(--rsk-z-docked);
+  --z-dropdown: var(--rsk-z-dropdown);
+  --z-sticky: var(--rsk-z-sticky);
+  --z-banner: var(--rsk-z-banner);
+  --z-overlay: var(--rsk-z-overlay);
+  --z-modal: var(--rsk-z-modal);
+  --z-popover: var(--rsk-z-popover);
+  --z-toast: var(--rsk-z-toast);
+  --z-tooltip: var(--rsk-z-tooltip);
+  --z-max: var(--rsk-z-max);
 
-  --color-muted: hsl(var(--muted));
-  --color-muted-foreground: hsl(var(--muted-foreground));
+  /* ─── Animation Durations ─────────────────────────────────────────────── */
+  --duration-fastest: var(--rsk-duration-fastest);
+  --duration-fast: var(--rsk-duration-fast);
+  --duration-normal: var(--rsk-duration-normal);
+  --duration-moderate: var(--rsk-duration-moderate);
+  --duration-slow: var(--rsk-duration-slow);
+  --duration-slower: var(--rsk-duration-slower);
+  --duration-slowest: var(--rsk-duration-slowest);
+  --duration-relaxed: var(--rsk-duration-relaxed);
+  --duration-long: var(--rsk-duration-long);
 
-  --color-accent: hsl(var(--accent));
-  --color-accent-foreground: hsl(var(--accent-foreground));
+  /* ─── Animation Easings ───────────────────────────────────────────────── */
+  --ease-linear: var(--rsk-ease-linear);
+  --ease-in: var(--rsk-ease-in);
+  --ease-out: var(--rsk-ease-out);
+  --ease-in-out: var(--rsk-ease-in-out);
+  --ease-spring: var(--rsk-ease-spring);
+  --ease-bounce: var(--rsk-ease-bounce);
+  --ease-smooth: var(--rsk-ease-smooth);
 
-  --color-popover: hsl(var(--popover));
-  --color-popover-foreground: hsl(var(--popover-foreground));
+  /* ─── Spacing ─────────────────────────────────────────────────────────── */
+  --spacing-px: var(--rsk-space-px);
+  --spacing-0: var(--rsk-space-0);
+  --spacing-0-5: var(--rsk-space-0-5);
+  --spacing-1: var(--rsk-space-1);
+  --spacing-1-5: var(--rsk-space-1-5);
+  --spacing-2: var(--rsk-space-2);
+  --spacing-2-5: var(--rsk-space-2-5);
+  --spacing-3: var(--rsk-space-3);
+  --spacing-3-5: var(--rsk-space-3-5);
+  --spacing-4: var(--rsk-space-4);
+  --spacing-5: var(--rsk-space-5);
+  --spacing-6: var(--rsk-space-6);
+  --spacing-7: var(--rsk-space-7);
+  --spacing-8: var(--rsk-space-8);
+  --spacing-9: var(--rsk-space-9);
+  --spacing-10: var(--rsk-space-10);
+  --spacing-11: var(--rsk-space-11);
+  --spacing-12: var(--rsk-space-12);
+  --spacing-14: var(--rsk-space-14);
+  --spacing-16: var(--rsk-space-16);
+  --spacing-20: var(--rsk-space-20);
+  --spacing-24: var(--rsk-space-24);
+  --spacing-28: var(--rsk-space-28);
+  --spacing-32: var(--rsk-space-32);
+  --spacing-36: var(--rsk-space-36);
+  --spacing-40: var(--rsk-space-40);
+  --spacing-44: var(--rsk-space-44);
+  --spacing-48: var(--rsk-space-48);
+  --spacing-52: var(--rsk-space-52);
+  --spacing-56: var(--rsk-space-56);
+  --spacing-60: var(--rsk-space-60);
+  --spacing-64: var(--rsk-space-64);
+  --spacing-72: var(--rsk-space-72);
+  --spacing-80: var(--rsk-space-80);
+  --spacing-96: var(--rsk-space-96);
 
-  --color-card: hsl(var(--card));
-  --color-card-foreground: hsl(var(--card-foreground));
+  /* ─── Opacity ─────────────────────────────────────────────────────────── */
+  --opacity-0: var(--rsk-opacity-0);
+  --opacity-5: var(--rsk-opacity-5);
+  --opacity-10: var(--rsk-opacity-10);
+  --opacity-15: var(--rsk-opacity-15);
+  --opacity-20: var(--rsk-opacity-20);
+  --opacity-25: var(--rsk-opacity-25);
+  --opacity-30: var(--rsk-opacity-30);
+  --opacity-40: var(--rsk-opacity-40);
+  --opacity-50: var(--rsk-opacity-50);
+  --opacity-60: var(--rsk-opacity-60);
+  --opacity-70: var(--rsk-opacity-70);
+  --opacity-75: var(--rsk-opacity-75);
+  --opacity-80: var(--rsk-opacity-80);
+  --opacity-90: var(--rsk-opacity-90);
+  --opacity-95: var(--rsk-opacity-95);
+  --opacity-100: var(--rsk-opacity-100);
 
-  --radius-lg: var(--radius);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-sm: calc(var(--radius) - 4px);
+  /* ─── Breakpoints ─────────────────────────────────────────────────────── */
+  --breakpoint-xs: 20rem; /* 320px */
+  --breakpoint-sm: 40rem; /* 640px */
+  --breakpoint-md: 48rem; /* 768px */
+  --breakpoint-lg: 64rem; /* 1024px */
+  --breakpoint-xl: 80rem; /* 1280px */
+  --breakpoint-2xl: 96rem; /* 1536px */
 
-  --font-sans:
-    'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
-    Arial, 'Noto Sans', sans-serif;
-
+  /* ─── Accordion Animations (legacy) ──────────────────────────────────── */
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
 
@@ -57,67 +329,9 @@
   }
 }
 
-:root {
-  --background: 0 0% 100%;
-  --foreground: 240 10% 3.9%;
-
-  --card: 0 0% 100%;
-  --card-foreground: 240 10% 3.9%;
-
-  --popover: 0 0% 100%;
-  --popover-foreground: 240 10% 3.9%;
-
-  --primary: 262.1 83.3% 57.8%; /* Vibrant Royal Violet */
-  --primary-foreground: 0 0% 98%;
-
-  --secondary: 240 4.8% 95.9%;
-  --secondary-foreground: 240 5.9% 10%;
-
-  --muted: 240 4.8% 95.9%;
-  --muted-foreground: 240 3.8% 46.1%;
-
-  --accent: 240 4.8% 95.9%;
-  --accent-foreground: 240 5.9% 10%;
-
-  --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 0 0% 98%;
-
-  --border: 240 5.9% 90%;
-  --input: 240 5.9% 90%;
-  --ring: 262.1 83.3% 57.8%;
-
-  --radius: 0.6rem;
-}
-
-.dark {
-  --background: 240 10% 3.9%;
-  --foreground: 0 0% 98%;
-
-  --card: 240 10% 3.9%;
-  --card-foreground: 0 0% 98%;
-
-  --popover: 240 10% 3.9%;
-  --popover-foreground: 0 0% 98%;
-
-  --primary: 263.4 70% 50.4%; /* Deep Dark Violet */
-  --primary-foreground: 0 0% 98%;
-
-  --secondary: 240 3.7% 15.9%;
-  --secondary-foreground: 0 0% 98%;
-
-  --muted: 240 3.7% 15.9%;
-  --muted-foreground: 240 5% 64.9%;
-
-  --accent: 240 3.7% 15.9%;
-  --accent-foreground: 0 0% 98%;
-
-  --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 0 0% 98%;
-
-  --border: 240 3.7% 15.9%;
-  --input: 240 3.7% 15.9%;
-  --ring: 263.4 70% 50.4%;
-}
+/* ==========================================================================
+   Container Utility
+   ========================================================================== */
 
 @utility container {
   margin-left: auto;
@@ -127,16 +341,19 @@
   max-width: 1400px;
 }
 
-/* Global Base Element Customizations */
+/* ==========================================================================
+   Global Base Element Customizations
+   ========================================================================== */
+
 @layer base {
   * {
-    border-color: var(--border);
-    outline-color: var(--ring);
+    border-color: var(--color-border, hsl(var(--border)));
+    outline-color: var(--color-ring, hsl(var(--ring)));
   }
 
   html {
     scroll-behavior: smooth;
-    font-family: var(--font-sans);
+    font-family: var(--rsk-font-sans);
   }
 
   body {
@@ -148,7 +365,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition:
-      background-color 0.3s ease,
-      color 0.3s ease;
+      background-color var(--rsk-duration-slow) var(--rsk-ease-in-out),
+      color var(--rsk-duration-slow) var(--rsk-ease-in-out);
   }
 }
