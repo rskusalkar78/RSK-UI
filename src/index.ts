@@ -7,3 +7,7 @@ export * from './lib/utils';
 // Theme features and dark mode hooks
 export * from './providers/theme-provider';
 export * from './hooks/use-theme';
+
+// Design tokens — CSS variable references, raw values, type definitions
+export * from './tokens';
+export { default as tokens } from './tokens';
