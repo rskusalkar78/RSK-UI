@@ -7,3 +7,4 @@ export * from './spinner/spinner';
 export * from './badge/badge';
 export * from './avatar/avatar';
 export * from './theme-toggle/theme-toggle';
+export * from './form';
