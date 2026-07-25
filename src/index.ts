@@ -19,4 +19,4 @@ export * from './tokens';
 export { default as tokens } from './tokens';
 
 // Components
-export * from './components/theme-toggle/theme-toggle';
+export * from './components';
