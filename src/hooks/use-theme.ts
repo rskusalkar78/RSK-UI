@@ -34,7 +34,7 @@ export function useTheme() {
     const cycle: Theme[] = ['light', 'dark', 'system'];
     const currentIndex = cycle.indexOf(theme);
     const nextTheme = cycle[(currentIndex + 1) % cycle.length];
-    setTheme(nextTheme);
+    setTheme(nextTheme as Theme);
   }, [theme, setTheme]);
 
   return {
