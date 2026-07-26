@@ -53,7 +53,7 @@ All variants:
     showLabel: {
       control: 'boolean',
       description: 'Show text label alongside icon (icon variant only)',
-      table: { defaultValue: { summary: false } },
+      table: { defaultValue: { summary: 'false' } },
     },
     className: { control: false },
   },

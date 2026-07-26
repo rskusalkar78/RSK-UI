@@ -212,11 +212,12 @@ function CycleToggle({ size, className }: Omit<ThemeToggleProps, 'variant'>) {
 
 // ─── Dropdown Toggle (explicit menu) ─────────────────────────────────────────
 
-const DROPDOWN_OPTIONS: { value: Theme; label: string; icon: (s: number) => JSX.Element }[] = [
-  { value: 'light', label: 'Light', icon: (s) => <SunIcon size={s} /> },
-  { value: 'dark', label: 'Dark', icon: (s) => <MoonIcon size={s} /> },
-  { value: 'system', label: 'System', icon: (s) => <MonitorIcon size={s} /> },
-];
+const DROPDOWN_OPTIONS: { value: Theme; label: string; icon: (s: number) => React.ReactElement }[] =
+  [
+    { value: 'light', label: 'Light', icon: (s) => <SunIcon size={s} /> },
+    { value: 'dark', label: 'Dark', icon: (s) => <MoonIcon size={s} /> },
+    { value: 'system', label: 'System', icon: (s) => <MonitorIcon size={s} /> },
+  ];
 
 function DropdownToggle({ size, className }: Omit<ThemeToggleProps, 'variant'>) {
   const { theme, resolvedTheme, setTheme } = useTheme();
