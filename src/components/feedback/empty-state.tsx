@@ -1,11 +1,20 @@
+<<<<<<< HEAD
 import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
+=======
+import { forwardRef, type HTMLAttributes } from 'react';
+>>>>>>> 461806c (feat: add Alert component stories for Storybook)
 import { cn } from '../../lib/utils';
 
 export interface EmptyStateProps extends HTMLAttributes<HTMLDivElement> {
   title: string;
   description?: string;
+<<<<<<< HEAD
   action?: ReactNode;
   icon?: ReactNode;
+=======
+  action?: React.ReactNode;
+  icon?: React.ReactNode;
+>>>>>>> 461806c (feat: add Alert component stories for Storybook)
 }
 
 export const EmptyState = forwardRef<HTMLDivElement, EmptyStateProps>(function EmptyState(
@@ -23,9 +32,13 @@ export const EmptyState = forwardRef<HTMLDivElement, EmptyStateProps>(function E
     >
       {icon ? <div className="mb-4">{icon}</div> : null}
       <h3 className="text-lg font-semibold">{title}</h3>
+<<<<<<< HEAD
       {description ? (
         <p className="mt-2 max-w-md text-sm text-muted-foreground">{description}</p>
       ) : null}
+=======
+      {description ? <p className="mt-2 max-w-md text-sm text-muted-foreground">{description}</p> : null}
+>>>>>>> 461806c (feat: add Alert component stories for Storybook)
       {action ? <div className="mt-6">{action}</div> : null}
       {children}
     </div>

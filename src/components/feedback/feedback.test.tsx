@@ -10,7 +10,13 @@ import { Toast } from './toast';
 
 describe('feedback components', () => {
   it('renders an alert with accessible semantics', () => {
+<<<<<<< HEAD
     render(<Alert title="Success" description="Your changes have been saved." variant="success" />);
+=======
+    render(
+      <Alert title="Success" description="Your changes have been saved." variant="success" />
+    );
+>>>>>>> 461806c (feat: add Alert component stories for Storybook)
 
     expect(screen.getByRole('alert')).toBeInTheDocument();
     expect(screen.getByText('Success')).toBeInTheDocument();

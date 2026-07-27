@@ -33,10 +33,14 @@ export const Progress = forwardRef<HTMLDivElement, ProgressProps>(function Progr
         aria-valuemin={0}
         aria-valuenow={safeValue}
         aria-label={label}
+<<<<<<< HEAD
         className={cn(
           'mt-2 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800',
           sizeStyles[size]
         )}
+=======
+        className={cn('mt-2 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800', sizeStyles[size])}
+>>>>>>> 461806c (feat: add Alert component stories for Storybook)
       >
         <div
           className="h-full rounded-full bg-primary-500 transition-[width] duration-300 ease-out"

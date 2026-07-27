@@ -1,14 +1,24 @@
+<<<<<<< HEAD
 import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
 import { CheckCircle2, CircleAlert, Info, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
+=======
+import { forwardRef, type ReactNode } from 'react';
+import { CheckCircle2, CircleAlert, Info, X } from 'lucide-react';
+import { AnimatePresence, motion, type HTMLMotionProps } from 'framer-motion';
+>>>>>>> 461806c (feat: add Alert component stories for Storybook)
 import { cn } from '../../lib/utils';
 
 export type ToastVariant = 'info' | 'success' | 'warning' | 'destructive';
 
+<<<<<<< HEAD
 export interface ToastProps extends Omit<
   HTMLAttributes<HTMLDivElement>,
   'onAnimationStart' | 'onAnimationEnd' | 'onDrag' | 'onDragEnd' | 'onDragStart'
 > {
+=======
+export interface ToastProps extends Omit<HTMLMotionProps<'div'>, 'children' | 'title'> {
+>>>>>>> 461806c (feat: add Alert component stories for Storybook)
   title?: string;
   description?: string;
   variant?: ToastVariant;
@@ -28,7 +38,11 @@ const variantStyles: Record<ToastVariant, string> = {
     'border-destructive-300 bg-destructive-50 text-destructive-900 dark:border-destructive-800 dark:bg-destructive-950/40 dark:text-destructive-100',
 };
 
+<<<<<<< HEAD
 const icons: Record<ToastVariant, ReactNode> = {
+=======
+const icons: Record<ToastVariant, React.ReactNode> = {
+>>>>>>> 461806c (feat: add Alert component stories for Storybook)
   info: <Info className="h-4 w-4" aria-hidden="true" />,
   success: <CheckCircle2 className="h-4 w-4" aria-hidden="true" />,
   warning: <CircleAlert className="h-4 w-4" aria-hidden="true" />,
