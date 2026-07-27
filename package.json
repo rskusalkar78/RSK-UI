@@ -17,6 +17,18 @@
     "test:watch": "vitest",
     "test:ui": "vitest --ui"
   },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "src/**/*.css": [
+      "prettier --write"
+    ],
+    "**/*.{json,md}": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^11.15.0",
