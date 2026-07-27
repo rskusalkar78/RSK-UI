@@ -15,7 +15,10 @@ export * from './popover/popover';
 export * from './tooltip/tooltip';
 export * from './overlay';
 export * from './feedback';
+<<<<<<< HEAD
 export * from './navigation';
 export * from './dashboard';
 export * from './layout';
 export { Card, List, Table } from './data-display';
+=======
+>>>>>>> c363b97 (feat: add feedback components export to main index)
