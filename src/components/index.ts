@@ -16,3 +16,4 @@ export * from './tooltip/tooltip';
 export * from './overlay';
 export * from './feedback';
 export * from './navigation';
+export * from './dashboard';
