@@ -3,7 +3,7 @@ import { cn } from '../../lib/utils';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
-export type BadgeVariant = 'solid' | 'outline' | 'subtle';
+export type BadgeVariant = 'solid' | 'outline' | 'subtle' | 'default' | BadgeColor;
 export type BadgeColor =
   'primary' | 'secondary' | 'accent' | 'success' | 'warning' | 'destructive' | 'info' | 'neutral';
 export type BadgeSize = 'sm' | 'md' | 'lg';
@@ -91,6 +91,23 @@ const dotSizeStyles: Record<BadgeSize, string> = {
   lg: 'h-2 w-2',
 };
 
+const variantMaps = {
+  solid: solidColors,
+  outline: outlineColors,
+  subtle: subtleColors,
+};
+
+const knownColors = new Set<string>([
+  'primary',
+  'secondary',
+  'accent',
+  'success',
+  'warning',
+  'destructive',
+  'info',
+  'neutral',
+]);
+
 // ─── Component ────────────────────────────────────────────────────────────────
 
 /**
@@ -113,11 +130,26 @@ export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(function Badge(
   },
   ref
 ) {
-  const colorMap = {
-    solid: solidColors,
-    outline: outlineColors,
-    subtle: subtleColors,
-  }[variant];
+  let effectiveVariant: string = variant;
+  let effectiveColor: BadgeColor = color;
+
+  if (knownColors.has(variant)) {
+    effectiveColor = variant as BadgeColor;
+    effectiveVariant = 'subtle';
+  } else if (variant === 'default') {
+    effectiveVariant = 'subtle';
+    effectiveColor = color !== 'neutral' ? color : 'primary';
+  }
+
+  const colorMap = variantMaps[effectiveVariant as keyof typeof variantMaps] || subtleColors;
+  const resolvedColorClass =
+    colorMap[effectiveColor as keyof typeof colorMap] ||
+    colorMap['neutral'] ||
+    subtleColors['neutral'];
+  const resolvedDotColorClass =
+    dotColors[effectiveColor as keyof typeof dotColors] || dotColors['neutral'];
+  const resolvedSizeClass = sizeStyles[size] || sizeStyles['md'];
+  const resolvedDotSizeClass = dotSizeStyles[size] || dotSizeStyles['md'];
 
   return (
     <span
@@ -125,15 +157,15 @@ export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(function Badge(
       className={cn(
         'inline-flex items-center font-medium rounded-full border',
         'whitespace-nowrap shrink-0',
-        sizeStyles[size],
-        colorMap[color],
+        resolvedSizeClass,
+        resolvedColorClass,
         className
       )}
       {...props}
     >
       {dot && (
         <span
-          className={cn('rounded-full shrink-0', dotSizeStyles[size], dotColors[color])}
+          className={cn('rounded-full shrink-0', resolvedDotSizeClass, resolvedDotColorClass)}
           aria-hidden="true"
         />
       )}

@@ -115,7 +115,7 @@ export const WithActions: Story = {
         title: 'Notifications',
         description: 'Configure notification settings',
         icon: <MessageCircle size={20} />,
-        action: <Badge variant="destructive">5</Badge>,
+        action: <Badge color="destructive">5</Badge>,
       },
       {
         id: '3',
@@ -133,24 +133,26 @@ export const WithActions: Story = {
   },
 };
 
+function SelectableListDemo() {
+  const [selected, setSelected] = useState<string | null>(null);
+
+  const items: ListItemProps[] = basicItems.map((item) => ({
+    ...item,
+    selected: selected === item.id,
+    onClick: () => setSelected(item.id),
+  }));
+
+  return (
+    <div className="space-y-4">
+      <div className="text-sm text-muted-foreground">Selected: {selected || 'None'}</div>
+      <List items={items} divider />
+    </div>
+  );
+}
+
 export const Selectable: Story = {
   name: 'Selectable Items',
-  render: () => {
-    const [selected, setSelected] = useState<string | null>(null);
-
-    const items: ListItemProps[] = basicItems.map((item) => ({
-      ...item,
-      selected: selected === item.id,
-      onClick: () => setSelected(item.id),
-    }));
-
-    return (
-      <div className="space-y-4">
-        <div className="text-sm text-muted-foreground">Selected: {selected || 'None'}</div>
-        <List items={items} divider />
-      </div>
-    );
-  },
+  render: () => <SelectableListDemo />,
 };
 
 export const HorizontalLayout: Story = {
@@ -218,7 +220,7 @@ export const CustomComposition: Story = {
         title="Featured Item"
         description="This item has custom styling"
         icon={<Star size={20} className="text-yellow-500" />}
-        action={<Badge variant="warning">New</Badge>}
+        action={<Badge color="warning">New</Badge>}
         className="bg-yellow-500/5"
       />
       <ListItem title="Regular Item" description="This is a standard item" />
@@ -257,7 +259,7 @@ export const MixedContent: Story = {
         title="User Profile"
         description="john@example.com"
         avatar={<Avatar name="John Doe" size="md" />}
-        action={<Badge>Admin</Badge>}
+        action={<Badge color="primary">Admin</Badge>}
       />
       <ListItem
         title="Recent Activity"
@@ -270,7 +272,7 @@ export const MixedContent: Story = {
         title="Messages"
         description="You have 3 unread messages"
         icon={<MessageCircle size={20} />}
-        action={<Badge variant="destructive">3</Badge>}
+        action={<Badge color="destructive">3</Badge>}
         onClick={() => console.log('Messages clicked')}
       />
     </List>
@@ -309,55 +311,57 @@ export const StatusList: Story = {
         title: 'Server Online',
         description: 'All systems operational',
         icon: <div className="h-2 w-2 rounded-full bg-green-500" />,
-        action: <Badge variant="success">Active</Badge>,
+        action: <Badge color="success">Active</Badge>,
       },
       {
         id: '2',
         title: 'Database Connection',
         description: 'Connected to primary database',
         icon: <div className="h-2 w-2 rounded-full bg-green-500" />,
-        action: <Badge variant="success">Connected</Badge>,
+        action: <Badge color="success">Connected</Badge>,
       },
       {
         id: '3',
         title: 'API Service',
         description: 'Experiencing delays',
         icon: <div className="h-2 w-2 rounded-full bg-yellow-500" />,
-        action: <Badge variant="warning">Degraded</Badge>,
+        action: <Badge color="warning">Degraded</Badge>,
       },
       {
         id: '4',
         title: 'Email Service',
         description: 'Service unavailable',
         icon: <div className="h-2 w-2 rounded-full bg-red-500" />,
-        action: <Badge variant="destructive">Offline</Badge>,
+        action: <Badge color="destructive">Offline</Badge>,
       },
     ];
     return <List items={items} divider />;
   },
 };
 
+function NavigationListDemo() {
+  const [active, setActive] = useState('home');
+
+  const navItems: ListItemProps[] = [
+    { id: 'home', title: 'Home', icon: <Star size={20} /> },
+    { id: 'activity', title: 'Activity', icon: <Clock size={20} /> },
+    {
+      id: 'messages',
+      title: 'Messages',
+      icon: <MessageCircle size={20} />,
+      action: <Badge color="primary">3</Badge>,
+    },
+    { id: 'settings', title: 'Settings', icon: <User size={20} /> },
+  ].map((item) => ({
+    ...item,
+    selected: active === item.id,
+    onClick: () => setActive(item.id),
+  }));
+
+  return <List items={navItems} spacing="compact" />;
+}
+
 export const NavigationList: Story = {
   name: 'Navigation List',
-  render: () => {
-    const [active, setActive] = useState('home');
-
-    const navItems: ListItemProps[] = [
-      { id: 'home', title: 'Home', icon: <Star size={20} /> },
-      { id: 'activity', title: 'Activity', icon: <Clock size={20} /> },
-      {
-        id: 'messages',
-        title: 'Messages',
-        icon: <MessageCircle size={20} />,
-        action: <Badge>3</Badge>,
-      },
-      { id: 'settings', title: 'Settings', icon: <User size={20} /> },
-    ].map((item) => ({
-      ...item,
-      selected: active === item.id,
-      onClick: () => setActive(item.id),
-    }));
-
-    return <List items={navItems} spacing="compact" />;
-  },
+  render: () => <NavigationListDemo />,
 };
