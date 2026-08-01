@@ -14,14 +14,11 @@ export default tseslint.config(
       'storybook-static',
       'eslint.config.js',
       'vite.config.ts',
-      'lint-staged.config.js'
-    ]
+      'lint-staged.config.js',
+    ],
   },
   {
-    extends: [
-      js.configs.recommended,
-      ...tseslint.configs.recommended,
-    ],
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2022,
@@ -34,18 +31,15 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       'prettier/prettier': 'error',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
           argsIgnorePattern: '^_',
-          varsIgnorePattern: '^_'
-        }
+          varsIgnorePattern: '^_',
+        },
       ],
     },
   },
