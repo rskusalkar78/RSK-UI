@@ -92,7 +92,10 @@ function TableInner<T>(
     const newDirection =
       currentSort?.key === columnKey && currentSort.direction === 'asc' ? 'desc' : 'asc';
 
-    const newSort = { key: columnKey, direction: newDirection };
+    const newSort: { key: string; direction: 'asc' | 'desc' } = {
+      key: columnKey,
+      direction: newDirection,
+    };
 
     if (onSort) {
       onSort(columnKey, newDirection);
@@ -314,4 +317,4 @@ export const Table = forwardRef(TableInner) as <T>(
   props: TableProps<T> & { ref?: React.ForwardedRef<HTMLDivElement> }
 ) => ReturnType<typeof TableInner>;
 
-Table.displayName = 'Table';
+(Table as any).displayName = 'Table';

@@ -3,7 +3,7 @@ import { cn } from '../../lib/utils';
 import { EmptyState } from '../feedback/empty-state';
 import { Skeleton } from '../feedback/skeleton';
 
-export interface CardProps extends HTMLAttributes<HTMLDivElement> {
+export interface CardProps extends Omit<HTMLAttributes<HTMLDivElement>, 'title'> {
   title?: ReactNode;
   description?: ReactNode;
   action?: ReactNode;

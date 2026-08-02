@@ -5,7 +5,7 @@ import { EmptyState } from '../feedback/empty-state';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
-export interface ListItemProps extends HTMLAttributes<HTMLLIElement> {
+export interface ListItemProps extends Omit<HTMLAttributes<HTMLLIElement>, 'title'> {
   /** Unique identifier */
   id?: string;
   /** Primary text content */

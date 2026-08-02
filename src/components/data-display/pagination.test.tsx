@@ -243,9 +243,9 @@ describe('Pagination — Page Size', () => {
 
     const select = screen.getByLabelText('Items per page') as HTMLSelectElement;
     expect(select.options).toHaveLength(3);
-    expect(select.options[0].value).toBe('5');
-    expect(select.options[1].value).toBe('15');
-    expect(select.options[2].value).toBe('25');
+    expect(select.options[0]?.value).toBe('5');
+    expect(select.options[1]?.value).toBe('15');
+    expect(select.options[2]?.value).toBe('25');
   });
 });
 
@@ -265,7 +265,7 @@ describe('Pagination — Info Display', () => {
       />
     );
     expect(
-      screen.getByText((content, element) => {
+      screen.getByText((_content, element) => {
         return element?.textContent === 'Showing 1 to 10 of 95 items';
       })
     ).toBeInTheDocument();
@@ -290,7 +290,7 @@ describe('Pagination — Info Display', () => {
       />
     );
     expect(
-      screen.getByText((content, element) => {
+      screen.getByText((_content, element) => {
         return element?.textContent === 'Showing 21 to 30 of 95 items';
       })
     ).toBeInTheDocument();
@@ -309,7 +309,7 @@ describe('Pagination — Info Display', () => {
       />
     );
     expect(
-      screen.getByText((content, element) => {
+      screen.getByText((_content, element) => {
         return element?.textContent === 'Showing 91 to 95 of 95 items';
       })
     ).toBeInTheDocument();
