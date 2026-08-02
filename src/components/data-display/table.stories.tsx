@@ -258,8 +258,8 @@ export const StickyHeader: Story = {
       id: String(i + 1),
       name: `User ${i + 1}`,
       email: `user${i + 1}@example.com`,
-      role: ['Admin', 'Editor', 'Viewer'][i % 3],
-      status: (['active', 'inactive', 'pending'] as const)[i % 3],
+      role: ['Admin', 'Editor', 'Viewer'][i % 3]!,
+      status: (['active', 'inactive', 'pending'] as const)[i % 3]!,
       joinDate: '2023-01-01',
     }));
 

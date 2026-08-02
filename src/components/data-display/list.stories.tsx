@@ -19,19 +19,31 @@ const contactItems: ListItemProps[] = [
     id: '1',
     title: 'John Doe',
     description: 'john@example.com',
-    avatar: <Avatar name="John Doe" size="md" />,
+    avatar: (
+      <Avatar size="md">
+        <AvatarFallback>JD</AvatarFallback>
+      </Avatar>
+    ),
   },
   {
     id: '2',
     title: 'Jane Smith',
     description: 'jane@example.com',
-    avatar: <Avatar name="Jane Smith" size="md" />,
+    avatar: (
+      <Avatar size="md">
+        <AvatarFallback>JS</AvatarFallback>
+      </Avatar>
+    ),
   },
   {
     id: '3',
     title: 'Bob Johnson',
     description: 'bob@example.com',
-    avatar: <Avatar name="Bob Johnson" size="md" />,
+    avatar: (
+      <Avatar size="md">
+        <AvatarFallback>BJ</AvatarFallback>
+      </Avatar>
+    ),
   },
 ];
 
@@ -139,7 +151,7 @@ function SelectableListDemo() {
   const items: ListItemProps[] = basicItems.map((item) => ({
     ...item,
     selected: selected === item.id,
-    onClick: () => setSelected(item.id),
+    onClick: () => setSelected(item.id ?? null),
   }));
 
   return (
