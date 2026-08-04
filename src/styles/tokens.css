@@ -1,0 +1,553 @@
+/* ==========================================================================
+   RSK-UI Design Tokens
+   All design token CSS custom properties for the RSK-UI design system.
+   Includes: Color Palette, Typography, Font Weights, Spacing, Border Radius,
+             Shadows, Breakpoints, Z-Index, Animations, Opacity
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   STATIC TOKENS (theme-agnostic primitives)
+   -------------------------------------------------------------------------- */
+
+:root {
+  /* ─── Color Palette — Base Scales ────────────────────────────────────────
+     Format: hsl channel values (used with hsl() or hsl(var / alpha))
+  ─────────────────────────────────────────────────────────────────────────── */
+
+  /* Neutral (Cool Gray) */
+  --rsk-color-neutral-50: 0 0% 98%;
+  --rsk-color-neutral-100: 240 6% 96%;
+  --rsk-color-neutral-200: 240 6% 90%;
+  --rsk-color-neutral-300: 240 5% 80%;
+  --rsk-color-neutral-400: 240 4% 65%;
+  --rsk-color-neutral-500: 240 4% 46%;
+  --rsk-color-neutral-600: 240 5% 34%;
+  --rsk-color-neutral-700: 240 5% 26%;
+  --rsk-color-neutral-800: 240 5% 17%;
+  --rsk-color-neutral-900: 240 6% 10%;
+  --rsk-color-neutral-950: 240 7% 4%;
+
+  /* Primary — Violet */
+  --rsk-color-primary-50: 265 100% 97%;
+  --rsk-color-primary-100: 265 89% 91%;
+  --rsk-color-primary-200: 263 87% 84%;
+  --rsk-color-primary-300: 262 85% 74%;
+  --rsk-color-primary-400: 262 84% 65%;
+  --rsk-color-primary-500: 262 83% 58%;
+  --rsk-color-primary-600: 262 76% 49%;
+  --rsk-color-primary-700: 262 69% 40%;
+  --rsk-color-primary-800: 263 63% 32%;
+  --rsk-color-primary-900: 263 57% 25%;
+  --rsk-color-primary-950: 263 67% 13%;
+
+  /* Secondary — Indigo */
+  --rsk-color-secondary-50: 226 100% 97%;
+  --rsk-color-secondary-100: 226 91% 92%;
+  --rsk-color-secondary-200: 226 85% 84%;
+  --rsk-color-secondary-300: 226 79% 74%;
+  --rsk-color-secondary-400: 226 74% 64%;
+  --rsk-color-secondary-500: 226 71% 55%;
+  --rsk-color-secondary-600: 226 65% 47%;
+  --rsk-color-secondary-700: 226 60% 39%;
+  --rsk-color-secondary-800: 227 54% 31%;
+  --rsk-color-secondary-900: 227 48% 24%;
+  --rsk-color-secondary-950: 226 60% 13%;
+
+  /* Accent — Fuchsia */
+  --rsk-color-accent-50: 295 100% 97%;
+  --rsk-color-accent-100: 293 86% 91%;
+  --rsk-color-accent-200: 292 85% 83%;
+  --rsk-color-accent-300: 291 83% 74%;
+  --rsk-color-accent-400: 292 81% 65%;
+  --rsk-color-accent-500: 292 80% 57%;
+  --rsk-color-accent-600: 292 73% 48%;
+  --rsk-color-accent-700: 292 67% 39%;
+  --rsk-color-accent-800: 292 61% 31%;
+  --rsk-color-accent-900: 292 56% 24%;
+  --rsk-color-accent-950: 292 69% 12%;
+
+  /* Destructive — Red */
+  --rsk-color-destructive-50: 0 86% 97%;
+  --rsk-color-destructive-100: 0 93% 94%;
+  --rsk-color-destructive-200: 0 96% 89%;
+  --rsk-color-destructive-300: 0 94% 82%;
+  --rsk-color-destructive-400: 0 91% 71%;
+  --rsk-color-destructive-500: 0 84% 60%;
+  --rsk-color-destructive-600: 0 72% 51%;
+  --rsk-color-destructive-700: 0 74% 42%;
+  --rsk-color-destructive-800: 0 70% 35%;
+  --rsk-color-destructive-900: 0 63% 31%;
+  --rsk-color-destructive-950: 0 75% 15%;
+
+  /* Success — Emerald */
+  --rsk-color-success-50: 152 81% 96%;
+  --rsk-color-success-100: 149 80% 90%;
+  --rsk-color-success-200: 152 76% 80%;
+  --rsk-color-success-300: 156 72% 67%;
+  --rsk-color-success-400: 158 64% 52%;
+  --rsk-color-success-500: 160 84% 39%;
+  --rsk-color-success-600: 161 94% 30%;
+  --rsk-color-success-700: 163 94% 24%;
+  --rsk-color-success-800: 163 88% 20%;
+  --rsk-color-success-900: 164 86% 16%;
+  --rsk-color-success-950: 166 91% 9%;
+
+  /* Warning — Amber */
+  --rsk-color-warning-50: 48 100% 96%;
+  --rsk-color-warning-100: 48 97% 88%;
+  --rsk-color-warning-200: 48 97% 77%;
+  --rsk-color-warning-300: 46 97% 65%;
+  --rsk-color-warning-400: 43 96% 56%;
+  --rsk-color-warning-500: 38 92% 50%;
+  --rsk-color-warning-600: 32 95% 44%;
+  --rsk-color-warning-700: 26 90% 37%;
+  --rsk-color-warning-800: 23 83% 31%;
+  --rsk-color-warning-900: 22 78% 26%;
+  --rsk-color-warning-950: 21 92% 14%;
+
+  /* Info — Sky */
+  --rsk-color-info-50: 204 100% 97%;
+  --rsk-color-info-100: 204 94% 94%;
+  --rsk-color-info-200: 201 94% 86%;
+  --rsk-color-info-300: 199 95% 74%;
+  --rsk-color-info-400: 198 93% 60%;
+  --rsk-color-info-500: 199 89% 48%;
+  --rsk-color-info-600: 200 98% 39%;
+  --rsk-color-info-700: 201 96% 32%;
+  --rsk-color-info-800: 201 90% 27%;
+  --rsk-color-info-900: 202 80% 24%;
+  --rsk-color-info-950: 204 80% 16%;
+
+  /* ─── Typography Scale ───────────────────────────────────────────────────
+     Font sizes paired with their default line heights and letter spacings.
+  ─────────────────────────────────────────────────────────────────────────── */
+
+  /* Font Families */
+  --rsk-font-sans:
+    'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+  --rsk-font-mono:
+    'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, 'SFMono-Regular', Menlo, Monaco,
+    Consolas, monospace;
+  --rsk-font-display: 'Inter', system-ui, sans-serif;
+
+  /* Font Sizes */
+  --rsk-text-2xs: 0.625rem; /*  10px */
+  --rsk-text-xs: 0.75rem; /*  12px */
+  --rsk-text-sm: 0.875rem; /*  14px */
+  --rsk-text-base: 1rem; /*  16px */
+  --rsk-text-lg: 1.125rem; /*  18px */
+  --rsk-text-xl: 1.25rem; /*  20px */
+  --rsk-text-2xl: 1.5rem; /*  24px */
+  --rsk-text-3xl: 1.875rem; /*  30px */
+  --rsk-text-4xl: 2.25rem; /*  36px */
+  --rsk-text-5xl: 3rem; /*  48px */
+  --rsk-text-6xl: 3.75rem; /*  60px */
+  --rsk-text-7xl: 4.5rem; /*  72px */
+  --rsk-text-8xl: 6rem; /*  96px */
+  --rsk-text-9xl: 8rem; /* 128px */
+
+  /* Line Heights */
+  --rsk-leading-none: 1;
+  --rsk-leading-tight: 1.25;
+  --rsk-leading-snug: 1.375;
+  --rsk-leading-normal: 1.5;
+  --rsk-leading-relaxed: 1.625;
+  --rsk-leading-loose: 2;
+  --rsk-leading-3: 0.75rem;
+  --rsk-leading-4: 1rem;
+  --rsk-leading-5: 1.25rem;
+  --rsk-leading-6: 1.5rem;
+  --rsk-leading-7: 1.75rem;
+  --rsk-leading-8: 2rem;
+  --rsk-leading-9: 2.25rem;
+  --rsk-leading-10: 2.5rem;
+
+  /* Letter Spacings */
+  --rsk-tracking-tighter: -0.05em;
+  --rsk-tracking-tight: -0.025em;
+  --rsk-tracking-normal: 0em;
+  --rsk-tracking-wide: 0.025em;
+  --rsk-tracking-wider: 0.05em;
+  --rsk-tracking-widest: 0.1em;
+
+  /* ─── Font Weights ───────────────────────────────────────────────────────*/
+
+  --rsk-font-weight-thin: 100;
+  --rsk-font-weight-extralight: 200;
+  --rsk-font-weight-light: 300;
+  --rsk-font-weight-normal: 400;
+  --rsk-font-weight-medium: 500;
+  --rsk-font-weight-semibold: 600;
+  --rsk-font-weight-bold: 700;
+  --rsk-font-weight-extrabold: 800;
+  --rsk-font-weight-black: 900;
+
+  /* ─── Spacing Scale (4px grid) ───────────────────────────────────────────*/
+
+  --rsk-space-px: 1px;
+  --rsk-space-0: 0rem; /*   0px */
+  --rsk-space-0-5: 0.125rem; /*   2px */
+  --rsk-space-1: 0.25rem; /*   4px */
+  --rsk-space-1-5: 0.375rem; /*   6px */
+  --rsk-space-2: 0.5rem; /*   8px */
+  --rsk-space-2-5: 0.625rem; /*  10px */
+  --rsk-space-3: 0.75rem; /*  12px */
+  --rsk-space-3-5: 0.875rem; /*  14px */
+  --rsk-space-4: 1rem; /*  16px */
+  --rsk-space-5: 1.25rem; /*  20px */
+  --rsk-space-6: 1.5rem; /*  24px */
+  --rsk-space-7: 1.75rem; /*  28px */
+  --rsk-space-8: 2rem; /*  32px */
+  --rsk-space-9: 2.25rem; /*  36px */
+  --rsk-space-10: 2.5rem; /*  40px */
+  --rsk-space-11: 2.75rem; /*  44px */
+  --rsk-space-12: 3rem; /*  48px */
+  --rsk-space-14: 3.5rem; /*  56px */
+  --rsk-space-16: 4rem; /*  64px */
+  --rsk-space-20: 5rem; /*  80px */
+  --rsk-space-24: 6rem; /*  96px */
+  --rsk-space-28: 7rem; /* 112px */
+  --rsk-space-32: 8rem; /* 128px */
+  --rsk-space-36: 9rem; /* 144px */
+  --rsk-space-40: 10rem; /* 160px */
+  --rsk-space-44: 11rem; /* 176px */
+  --rsk-space-48: 12rem; /* 192px */
+  --rsk-space-52: 13rem; /* 208px */
+  --rsk-space-56: 14rem; /* 224px */
+  --rsk-space-60: 15rem; /* 240px */
+  --rsk-space-64: 16rem; /* 256px */
+  --rsk-space-72: 18rem; /* 288px */
+  --rsk-space-80: 20rem; /* 320px */
+  --rsk-space-96: 24rem; /* 384px */
+
+  /* ─── Border Radius ──────────────────────────────────────────────────────*/
+
+  --rsk-radius-none: 0px;
+  --rsk-radius-xs: 0.125rem; /*  2px */
+  --rsk-radius-sm: 0.25rem; /*  4px */
+  --rsk-radius-md: 0.375rem; /*  6px */
+  --rsk-radius-lg: 0.5rem; /*  8px */
+  --rsk-radius-xl: 0.75rem; /* 12px */
+  --rsk-radius-2xl: 1rem; /* 16px */
+  --rsk-radius-3xl: 1.5rem; /* 24px */
+  --rsk-radius-4xl: 2rem; /* 32px */
+  --rsk-radius-full: 9999px;
+
+  /* ─── Breakpoints ────────────────────────────────────────────────────────
+     Note: Breakpoints are not CSS custom properties by spec but are
+     provided here as reference values and mapped in Tailwind config.
+  ─────────────────────────────────────────────────────────────────────────── */
+
+  --rsk-screen-xs: 20rem; /* 320px  — small phones */
+  --rsk-screen-sm: 40rem; /* 640px  — large phones */
+  --rsk-screen-md: 48rem; /* 768px  — tablets */
+  --rsk-screen-lg: 64rem; /* 1024px — small laptops */
+  --rsk-screen-xl: 80rem; /* 1280px — desktops */
+  --rsk-screen-2xl: 96rem; /* 1536px — large displays */
+
+  /* ─── Z-Index Scale ──────────────────────────────────────────────────────*/
+
+  --rsk-z-deep: -1;
+  --rsk-z-base: 0;
+  --rsk-z-docked: 10;
+  --rsk-z-dropdown: 1000;
+  --rsk-z-sticky: 1100;
+  --rsk-z-banner: 1200;
+  --rsk-z-overlay: 1300;
+  --rsk-z-modal: 1400;
+  --rsk-z-popover: 1500;
+  --rsk-z-toast: 1700;
+  --rsk-z-tooltip: 1800;
+  --rsk-z-max: 9999;
+
+  /* ─── Animation Durations ────────────────────────────────────────────────*/
+
+  --rsk-duration-fastest: 75ms;
+  --rsk-duration-fast: 100ms;
+  --rsk-duration-normal: 150ms;
+  --rsk-duration-moderate: 200ms;
+  --rsk-duration-slow: 300ms;
+  --rsk-duration-slower: 400ms;
+  --rsk-duration-slowest: 500ms;
+  --rsk-duration-relaxed: 700ms;
+  --rsk-duration-long: 1000ms;
+
+  /* ─── Animation Easings ──────────────────────────────────────────────────*/
+
+  --rsk-ease-linear: linear;
+  --rsk-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --rsk-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --rsk-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --rsk-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --rsk-ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --rsk-ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  /* ─── Opacity Scale ──────────────────────────────────────────────────────*/
+
+  --rsk-opacity-0: 0;
+  --rsk-opacity-5: 0.05;
+  --rsk-opacity-10: 0.1;
+  --rsk-opacity-15: 0.15;
+  --rsk-opacity-20: 0.2;
+  --rsk-opacity-25: 0.25;
+  --rsk-opacity-30: 0.3;
+  --rsk-opacity-40: 0.4;
+  --rsk-opacity-50: 0.5;
+  --rsk-opacity-60: 0.6;
+  --rsk-opacity-70: 0.7;
+  --rsk-opacity-75: 0.75;
+  --rsk-opacity-80: 0.8;
+  --rsk-opacity-90: 0.9;
+  --rsk-opacity-95: 0.95;
+  --rsk-opacity-100: 1;
+}
+
+/* ==========================================================================
+   SEMANTIC TOKENS — LIGHT THEME (:root)
+   Semantic tokens map design intent to palette values.
+   ========================================================================== */
+
+:root {
+  /* ─── Background Layers ──────────────────────────────────────────────────*/
+  --rsk-bg-base: var(--rsk-color-neutral-50); /* Page canvas */
+  --rsk-bg-subtle: var(--rsk-color-neutral-100); /* Slightly elevated */
+  --rsk-bg-muted: var(--rsk-color-neutral-200); /* Disabled / placeholder */
+  --rsk-bg-emphasis: var(--rsk-color-neutral-900); /* Inverted surfaces */
+
+  /* ─── Surface / Card Layers ──────────────────────────────────────────────*/
+  --rsk-surface-base: 0 0% 100%; /* Pure white card */
+  --rsk-surface-raised: 0 0% 100%; /* Elevated modal/popover */
+  --rsk-surface-sunken: var(--rsk-color-neutral-100); /* Inset / well */
+
+  /* ─── Foreground / Text ──────────────────────────────────────────────────*/
+  --rsk-text-base: var(--rsk-color-neutral-900); /* Primary text */
+  --rsk-text-muted: var(--rsk-color-neutral-500); /* Secondary/helper text */
+  --rsk-text-subtle: var(--rsk-color-neutral-400); /* Placeholder text */
+  --rsk-text-disabled: var(--rsk-color-neutral-300); /* Disabled state */
+  --rsk-text-inverse: var(--rsk-color-neutral-50); /* On dark backgrounds */
+
+  /* ─── Brand — Primary ────────────────────────────────────────────────────*/
+  --rsk-primary: var(--rsk-color-primary-500);
+  --rsk-primary-hover: var(--rsk-color-primary-600);
+  --rsk-primary-active: var(--rsk-color-primary-700);
+  --rsk-primary-subtle: var(--rsk-color-primary-50);
+  --rsk-primary-muted: var(--rsk-color-primary-100);
+  --rsk-primary-emphasis: var(--rsk-color-primary-900);
+  --rsk-primary-foreground: 0 0% 100%;
+
+  /* ─── Brand — Secondary ──────────────────────────────────────────────────*/
+  --rsk-secondary: var(--rsk-color-secondary-500);
+  --rsk-secondary-hover: var(--rsk-color-secondary-600);
+  --rsk-secondary-active: var(--rsk-color-secondary-700);
+  --rsk-secondary-subtle: var(--rsk-color-secondary-50);
+  --rsk-secondary-muted: var(--rsk-color-secondary-100);
+  --rsk-secondary-foreground: 0 0% 100%;
+
+  /* ─── Brand — Accent ─────────────────────────────────────────────────────*/
+  --rsk-accent: var(--rsk-color-accent-500);
+  --rsk-accent-hover: var(--rsk-color-accent-600);
+  --rsk-accent-subtle: var(--rsk-color-accent-50);
+  --rsk-accent-muted: var(--rsk-color-accent-100);
+  --rsk-accent-foreground: 0 0% 100%;
+
+  /* ─── Semantic States ────────────────────────────────────────────────────*/
+  --rsk-destructive: var(--rsk-color-destructive-500);
+  --rsk-destructive-hover: var(--rsk-color-destructive-600);
+  --rsk-destructive-subtle: var(--rsk-color-destructive-50);
+  --rsk-destructive-muted: var(--rsk-color-destructive-100);
+  --rsk-destructive-foreground: 0 0% 100%;
+
+  --rsk-success: var(--rsk-color-success-500);
+  --rsk-success-hover: var(--rsk-color-success-600);
+  --rsk-success-subtle: var(--rsk-color-success-50);
+  --rsk-success-muted: var(--rsk-color-success-100);
+  --rsk-success-foreground: 0 0% 100%;
+
+  --rsk-warning: var(--rsk-color-warning-500);
+  --rsk-warning-hover: var(--rsk-color-warning-600);
+  --rsk-warning-subtle: var(--rsk-color-warning-50);
+  --rsk-warning-muted: var(--rsk-color-warning-100);
+  --rsk-warning-foreground: var(--rsk-color-neutral-900);
+
+  --rsk-info: var(--rsk-color-info-500);
+  --rsk-info-hover: var(--rsk-color-info-600);
+  --rsk-info-subtle: var(--rsk-color-info-50);
+  --rsk-info-muted: var(--rsk-color-info-100);
+  --rsk-info-foreground: 0 0% 100%;
+
+  /* ─── Border & Outline ───────────────────────────────────────────────────*/
+  --rsk-border-subtle: var(--rsk-color-neutral-100);
+  --rsk-border-base: var(--rsk-color-neutral-200);
+  --rsk-border-strong: var(--rsk-color-neutral-300);
+  --rsk-border-focus: var(--rsk-color-primary-500);
+
+  /* ─── Input ──────────────────────────────────────────────────────────────*/
+  --rsk-input-bg: 0 0% 100%;
+  --rsk-input-border: var(--rsk-color-neutral-300);
+  --rsk-input-ring: var(--rsk-color-primary-500);
+  --rsk-input-text: var(--rsk-color-neutral-900);
+  --rsk-input-placeholder: var(--rsk-color-neutral-400);
+
+  /* ─── Shadows (Light) ────────────────────────────────────────────────────*/
+  --rsk-shadow-xs: 0 1px 2px 0 hsl(240 6% 10% / 0.05);
+  --rsk-shadow-sm: 0 1px 3px 0 hsl(240 6% 10% / 0.1), 0 1px 2px -1px hsl(240 6% 10% / 0.1);
+  --rsk-shadow-md: 0 4px 6px -1px hsl(240 6% 10% / 0.1), 0 2px 4px -2px hsl(240 6% 10% / 0.1);
+  --rsk-shadow-lg: 0 10px 15px -3px hsl(240 6% 10% / 0.1), 0 4px 6px -4px hsl(240 6% 10% / 0.1);
+  --rsk-shadow-xl: 0 20px 25px -5px hsl(240 6% 10% / 0.1), 0 8px 10px -6px hsl(240 6% 10% / 0.1);
+  --rsk-shadow-2xl: 0 25px 50px -12px hsl(240 6% 10% / 0.25);
+  --rsk-shadow-inner: inset 0 2px 4px 0 hsl(240 6% 10% / 0.06);
+  --rsk-shadow-none: none;
+
+  /* Glow Shadows — colored elevation */
+  --rsk-shadow-glow-primary: 0 0 20px 4px hsl(262 83% 58% / 0.25);
+  --rsk-shadow-glow-secondary: 0 0 20px 4px hsl(226 71% 55% / 0.25);
+  --rsk-shadow-glow-accent: 0 0 20px 4px hsl(292 80% 57% / 0.25);
+  --rsk-shadow-glow-success: 0 0 20px 4px hsl(160 84% 39% / 0.25);
+  --rsk-shadow-glow-destructive: 0 0 20px 4px hsl(0 84% 60% / 0.25);
+
+  /* Tailwind-compat aliases (keeps backwards-compat with existing globals.css) */
+  --background: var(--rsk-bg-base);
+  --foreground: var(--rsk-color-neutral-900);
+  --card: var(--rsk-surface-base);
+  --card-foreground: var(--rsk-color-neutral-900);
+  --popover: var(--rsk-surface-raised);
+  --popover-foreground: var(--rsk-color-neutral-900);
+  --primary: 262.1 83.3% 57.8%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 262.1 83.3% 57.8%;
+  --radius: 0.6rem;
+}
+
+/* ==========================================================================
+   SEMANTIC TOKENS — DARK THEME (.dark)
+   ========================================================================== */
+
+.dark {
+  /* ─── Background Layers ──────────────────────────────────────────────────*/
+  --rsk-bg-base: var(--rsk-color-neutral-950); /* Deep dark canvas */
+  --rsk-bg-subtle: var(--rsk-color-neutral-900); /* Slightly elevated */
+  --rsk-bg-muted: var(--rsk-color-neutral-800); /* Disabled / placeholder */
+  --rsk-bg-emphasis: var(--rsk-color-neutral-50); /* Inverted surfaces */
+
+  /* ─── Surface / Card Layers ──────────────────────────────────────────────*/
+  --rsk-surface-base: 240 6% 10%; /* Dark card surface */
+  --rsk-surface-raised: 240 5% 17%; /* Elevated modal/popover */
+  --rsk-surface-sunken: var(--rsk-color-neutral-950); /* Inset / well */
+
+  /* ─── Foreground / Text ──────────────────────────────────────────────────*/
+  --rsk-text-base: var(--rsk-color-neutral-50); /* Primary text on dark */
+  --rsk-text-muted: var(--rsk-color-neutral-400); /* Secondary/helper text */
+  --rsk-text-subtle: var(--rsk-color-neutral-500); /* Placeholder text */
+  --rsk-text-disabled: var(--rsk-color-neutral-700); /* Disabled state */
+  --rsk-text-inverse: var(--rsk-color-neutral-900); /* On light surfaces */
+
+  /* ─── Brand — Primary (slightly lighter for dark mode contrast) ──────────*/
+  --rsk-primary: var(--rsk-color-primary-400);
+  --rsk-primary-hover: var(--rsk-color-primary-300);
+  --rsk-primary-active: var(--rsk-color-primary-200);
+  --rsk-primary-subtle: var(--rsk-color-primary-950);
+  --rsk-primary-muted: var(--rsk-color-primary-900);
+  --rsk-primary-emphasis: var(--rsk-color-primary-100);
+  --rsk-primary-foreground: 0 0% 100%;
+
+  /* ─── Brand — Secondary ──────────────────────────────────────────────────*/
+  --rsk-secondary: var(--rsk-color-secondary-400);
+  --rsk-secondary-hover: var(--rsk-color-secondary-300);
+  --rsk-secondary-active: var(--rsk-color-secondary-200);
+  --rsk-secondary-subtle: var(--rsk-color-secondary-950);
+  --rsk-secondary-muted: var(--rsk-color-secondary-900);
+  --rsk-secondary-foreground: 0 0% 100%;
+
+  /* ─── Brand — Accent ─────────────────────────────────────────────────────*/
+  --rsk-accent: var(--rsk-color-accent-400);
+  --rsk-accent-hover: var(--rsk-color-accent-300);
+  --rsk-accent-subtle: var(--rsk-color-accent-950);
+  --rsk-accent-muted: var(--rsk-color-accent-900);
+  --rsk-accent-foreground: 0 0% 100%;
+
+  /* ─── Semantic States ────────────────────────────────────────────────────*/
+  --rsk-destructive: var(--rsk-color-destructive-400);
+  --rsk-destructive-hover: var(--rsk-color-destructive-300);
+  --rsk-destructive-subtle: var(--rsk-color-destructive-950);
+  --rsk-destructive-muted: var(--rsk-color-destructive-900);
+  --rsk-destructive-foreground: 0 0% 100%;
+
+  --rsk-success: var(--rsk-color-success-400);
+  --rsk-success-hover: var(--rsk-color-success-300);
+  --rsk-success-subtle: var(--rsk-color-success-950);
+  --rsk-success-muted: var(--rsk-color-success-900);
+  --rsk-success-foreground: 0 0% 100%;
+
+  --rsk-warning: var(--rsk-color-warning-400);
+  --rsk-warning-hover: var(--rsk-color-warning-300);
+  --rsk-warning-subtle: var(--rsk-color-warning-950);
+  --rsk-warning-muted: var(--rsk-color-warning-900);
+  --rsk-warning-foreground: var(--rsk-color-neutral-900);
+
+  --rsk-info: var(--rsk-color-info-400);
+  --rsk-info-hover: var(--rsk-color-info-300);
+  --rsk-info-subtle: var(--rsk-color-info-950);
+  --rsk-info-muted: var(--rsk-color-info-900);
+  --rsk-info-foreground: 0 0% 100%;
+
+  /* ─── Border & Outline ───────────────────────────────────────────────────*/
+  --rsk-border-subtle: var(--rsk-color-neutral-900);
+  --rsk-border-base: var(--rsk-color-neutral-800);
+  --rsk-border-strong: var(--rsk-color-neutral-700);
+  --rsk-border-focus: var(--rsk-color-primary-400);
+
+  /* ─── Input ──────────────────────────────────────────────────────────────*/
+  --rsk-input-bg: 240 6% 10%;
+  --rsk-input-border: var(--rsk-color-neutral-700);
+  --rsk-input-ring: var(--rsk-color-primary-400);
+  --rsk-input-text: var(--rsk-color-neutral-50);
+  --rsk-input-placeholder: var(--rsk-color-neutral-500);
+
+  /* ─── Shadows (Dark — reduced brightness, use glow for elevation) ─────────*/
+  --rsk-shadow-xs: 0 1px 2px 0 hsl(0 0% 0% / 0.3);
+  --rsk-shadow-sm: 0 1px 3px 0 hsl(0 0% 0% / 0.4), 0 1px 2px -1px hsl(0 0% 0% / 0.4);
+  --rsk-shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.4), 0 2px 4px -2px hsl(0 0% 0% / 0.4);
+  --rsk-shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.4), 0 4px 6px -4px hsl(0 0% 0% / 0.4);
+  --rsk-shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.5), 0 8px 10px -6px hsl(0 0% 0% / 0.5);
+  --rsk-shadow-2xl: 0 25px 50px -12px hsl(0 0% 0% / 0.7);
+  --rsk-shadow-inner: inset 0 2px 4px 0 hsl(0 0% 0% / 0.3);
+  --rsk-shadow-none: none;
+
+  --rsk-shadow-glow-primary: 0 0 24px 6px hsl(262 83% 58% / 0.4);
+  --rsk-shadow-glow-secondary: 0 0 24px 6px hsl(226 71% 55% / 0.4);
+  --rsk-shadow-glow-accent: 0 0 24px 6px hsl(292 80% 57% / 0.4);
+  --rsk-shadow-glow-success: 0 0 24px 6px hsl(160 84% 39% / 0.4);
+  --rsk-shadow-glow-destructive: 0 0 24px 6px hsl(0 84% 60% / 0.4);
+
+  /* Tailwind-compat aliases */
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 263.4 70% 50.4%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 263.4 70% 50.4%;
+}
