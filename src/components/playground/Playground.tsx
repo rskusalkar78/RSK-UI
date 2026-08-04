@@ -17,7 +17,7 @@ type PropDef = {
 
 type ComponentDef = {
   name: string;
-  render: (props: any) => JSX.Element;
+  render: (props: any) => React.ReactElement;
   props: PropDef[];
 };
 
@@ -59,7 +59,7 @@ function formatPropValue(p: PropDef, v: any) {
 }
 
 export default function Playground() {
-  const [selected, setSelected] = useState(components[0].name);
+  const [selected, setSelected] = useState(components[0]?.name ?? 'Button');
   const comp = components.find((c) => c.name === selected)!;
   const initialProps = useMemo(() => {
     const obj: Record<string, any> = {};
