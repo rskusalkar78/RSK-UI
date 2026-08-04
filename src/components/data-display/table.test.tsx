@@ -212,7 +212,10 @@ describe('Table — Selection', () => {
     );
 
     const checkboxes = screen.getAllByRole('checkbox');
-    await user.click(checkboxes[1]); // First row checkbox (index 0 is select all)
+    const firstRowCheckbox = checkboxes[1];
+    if (firstRowCheckbox) {
+      await user.click(firstRowCheckbox);
+    }
 
     expect(handleRowSelect).toHaveBeenCalledWith('1');
   });
@@ -391,7 +394,10 @@ describe('Table — Custom Row ID', () => {
     );
 
     const checkboxes = screen.getAllByRole('checkbox');
-    await user.click(checkboxes[1]);
+    const firstRowCheckbox = checkboxes[1];
+    if (firstRowCheckbox) {
+      await user.click(firstRowCheckbox);
+    }
 
     expect(handleRowSelect).toHaveBeenCalledWith('1');
   });
