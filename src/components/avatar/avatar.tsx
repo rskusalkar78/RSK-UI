@@ -21,6 +21,8 @@ export interface AvatarProps extends HTMLAttributes<HTMLSpanElement> {
   shape?: AvatarShape;
   /** Presence indicator dot */
   status?: AvatarStatus;
+  /** Optional name used to derive initials when no explicit fallback is provided */
+  name?: string;
 }
 
 export interface AvatarImageProps extends ImgHTMLAttributes<HTMLImageElement> {
@@ -104,7 +106,7 @@ const shapeStyles: Record<AvatarShape, string> = {
  * </Avatar>
  */
 export const Avatar = forwardRef<HTMLSpanElement, AvatarProps>(function Avatar(
-  { size = 'md', shape = 'circle', status, className, children, ...props },
+  { size = 'md', shape = 'circle', status, className, children, name: _name, ...props },
   ref
 ) {
   const [imageLoaded, setImageLoaded] = useState(false);

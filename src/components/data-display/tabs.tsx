@@ -112,8 +112,8 @@ export const Tabs = forwardRef<HTMLDivElement, TabsProps>(function Tabs(
       nextIndex = enabledTabs.length - 1;
     }
 
-    if (nextIndex !== currentIndex && enabledTabs[nextIndex]) {
-      const targetTab = enabledTabs[nextIndex];
+    const targetTab = enabledTabs[nextIndex];
+    if (nextIndex !== currentIndex && targetTab) {
       handleTabClick(targetTab.id);
       // Focus the next tab
       setTimeout(() => {

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { useState } from 'react';
 import { Mail, Phone, MapPin, User, ChevronRight, Star, Clock, MessageCircle } from 'lucide-react';
 import { List, ListItem, type ListItemProps } from './list';
-import { Avatar } from '../avatar/avatar';
+import { Avatar, AvatarFallback } from '../avatar/avatar';
 import { Badge } from '../badge/badge';
 import { Button } from '../button/button';
 
