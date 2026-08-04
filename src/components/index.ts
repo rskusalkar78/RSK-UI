@@ -18,4 +18,5 @@ export * from './feedback';
 export * from './navigation';
 export * from './dashboard';
 export * from './layout';
+export * from './examples';
 export { Card, List, Table } from './data-display';
