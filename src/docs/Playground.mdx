@@ -1,0 +1,18 @@
+import { Meta, Title, Description, Canvas, ArgsTable, Subtitle } from '@storybook/addon-docs/blocks';
+import * as ButtonStories from '../components/button/button.stories';
+import { Button } from '../components/button/button';
+
+<Meta title="Documentation/Playground" of={ButtonStories} />
+
+<Title>Component Playground</Title>
+<Subtitle>Live edit props and view source side-by-side.</Subtitle>
+
+<Description>
+Use the controls below to experiment with a component and preview generated source.
+</Description>
+
+<Canvas>
+  <Button>Playground Button</Button>
+</Canvas>
+
+<ArgsTable of={Button} />
