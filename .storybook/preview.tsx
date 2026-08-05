@@ -69,17 +69,32 @@ const preview: Preview = {
   decorators: [withThemeProvider],
 
   parameters: {
+    actions: { argTypesRegex: '^on.*' },
     controls: {
+      expanded: true,
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
     },
-    // Remove the generic backgrounds panel — our ThemeProvider handles this
+    a11y: {
+      element: '#root',
+      manual: false,
+    },
     backgrounds: { disable: true },
-    // Show docs by default
     docs: {
+      autodocs: true,
       toc: true,
+      source: {
+        type: 'dynamic',
+      },
+    },
+    layout: 'padded',
+    options: {
+      storySort: {
+        order: ['Documentation', 'Components', 'Form Components', 'Layout', 'Theme Engine', 'Examples'],
+        method: 'alphabetical',
+      },
     },
   },
 };
