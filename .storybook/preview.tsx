@@ -72,6 +72,7 @@ const preview: Preview = {
     actions: { argTypesRegex: '^on.*' },
     controls: {
       expanded: true,
+      sort: 'requiredFirst',
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
@@ -92,7 +93,16 @@ const preview: Preview = {
     layout: 'padded',
     options: {
       storySort: {
-        order: ['Documentation', 'Components', 'Form Components', 'Layout', 'Theme Engine', 'Examples'],
+        order: [
+          'Documentation',
+          'Guides',
+          'Playground',
+          'Components',
+          'Form Components',
+          'Layout',
+          'Theme Engine',
+          'Examples',
+        ],
         method: 'alphabetical',
       },
     },

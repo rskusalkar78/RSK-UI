@@ -5,7 +5,15 @@ const meta = {
   title: 'Components/Button',
   component: Button,
   tags: ['autodocs'],
-  parameters: { layout: 'centered' },
+  parameters: {
+    layout: 'centered',
+    docs: {
+      description: {
+        component:
+          'Primary action trigger with multiple visual variants, sizes, and loading states.',
+      },
+    },
+  },
   argTypes: {
     variant: { control: 'select', options: ['solid', 'outline', 'ghost', 'link', 'destructive'] },
     size: { control: 'select', options: ['xs', 'sm', 'md', 'lg', 'xl'] },
