@@ -4,11 +4,33 @@ import { Breadcrumb, CommandPalette, Dropdown, Navbar, Pagination, Sidebar, Tabs
 
 const meta = {
   title: 'Components/Navigation',
+  component: Navbar,
   tags: ['autodocs'],
-  parameters: { layout: 'padded' },
-} satisfies Meta;
+  parameters: {
+    layout: 'padded',
+    docs: {
+      description: {
+        component:
+          'Navigation primitives for headers, sidebars, tabs, breadcrumbs, pagination, dropdowns, and command palettes.',
+      },
+    },
+  },
+} satisfies Meta<typeof Navbar>;
 
 export default meta;
+
+export const Docs: StoryObj<typeof Navbar> = {
+  name: 'Documentation',
+  render: () => (
+    <div className="space-y-4 rounded-lg border border-border bg-background p-6 text-foreground">
+      <h2 className="text-xl font-semibold">Navigation primitives</h2>
+      <p className="text-sm text-muted-foreground">
+        Use the stories below to inspect navbar, sidebar, tabs, breadcrumb, pagination, dropdown,
+        and command palette patterns.
+      </p>
+    </div>
+  ),
+};
 
 export const NavbarStory: StoryObj = {
   render: () => (
