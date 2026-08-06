@@ -15,10 +15,20 @@ const config: StorybookConfig = {
   },
   docs: {
     autodocs: true,
+    defaultName: 'Documentation',
   },
   options: {
     storySort: {
-      order: ['Documentation', 'Components', 'Form Components', 'Layout', 'Theme Engine', 'Examples'],
+      order: [
+        'Documentation',
+        'Guides',
+        'Playground',
+        'Components',
+        'Form Components',
+        'Layout',
+        'Theme Engine',
+        'Examples',
+      ],
       method: 'alphabetical',
     },
   },
