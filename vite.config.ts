@@ -41,8 +41,26 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],
-      include: ['src/components/**/*.tsx'],
-      exclude: ['src/components/**/*.stories.tsx', 'src/components/**/*.test.tsx'],
+      include: [
+        'src/components/**/*.{ts,tsx}',
+        'src/hooks/**/*.{ts,tsx}',
+        'src/providers/**/*.{ts,tsx}',
+        'src/lib/**/*.{ts,tsx}',
+        'src/tokens/**/*.{ts,tsx}',
+      ],
+      exclude: [
+        'src/**/*.stories.{ts,tsx}',
+        'src/**/*.test.{ts,tsx}',
+        'src/**/index.ts',
+        'src/main.tsx',
+        'src/homepage.tsx',
+      ],
+      thresholds: {
+        lines: 90,
+        functions: 90,
+        branches: 90,
+        statements: 90,
+      },
     },
   },
 });
