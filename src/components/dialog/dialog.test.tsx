@@ -6,13 +6,23 @@ import { Dialog } from './dialog';
 vi.mock('framer-motion', () => ({
   motion: {
     div: ({ children, ...props }: Record<string, unknown>) => {
-      const { initial: _initial, animate: _animate, exit: _exit, transition: _transition, ...rest } =
-        props;
+      const {
+        initial: _initial,
+        animate: _animate,
+        exit: _exit,
+        transition: _transition,
+        ...rest
+      } = props;
       return <div {...(rest as Record<string, unknown>)}>{children}</div>;
     },
     aside: ({ children, ...props }: Record<string, unknown>) => {
-      const { initial: _initial, animate: _animate, exit: _exit, transition: _transition, ...rest } =
-        props;
+      const {
+        initial: _initial,
+        animate: _animate,
+        exit: _exit,
+        transition: _transition,
+        ...rest
+      } = props;
       return <aside {...(rest as Record<string, unknown>)}>{children}</aside>;
     },
   },
