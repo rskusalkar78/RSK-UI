@@ -35,21 +35,22 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.15.0",
     "lucide-react": "^0.469.0",
+    "prismjs": "^1.29.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "prismjs": "^1.29.0",
     "react-hook-form": "^7.54.1",
     "recharts": "^3.10.1",
     "tailwind-merge": "^2.6.0",
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@axe-core/react": "^4.12.1",
     "@chromatic-com/storybook": "^3.2.3",
     "@eslint/js": "^9.17.0",
-    "@storybook/addon-essentials": "^8.6.18",
-    "@storybook/addon-interactions": "^8.6.18",
     "@storybook/addon-a11y": "^8.6.18",
     "@storybook/addon-docs": "^8.6.18",
+    "@storybook/addon-essentials": "^8.6.18",
+    "@storybook/addon-interactions": "^8.6.18",
     "@storybook/addon-links": "^8.6.18",
     "@storybook/blocks": "^8.6.18",
     "@storybook/react": "^8.6.18",
@@ -81,6 +82,7 @@
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.1",
     "vite": "^6.0.5",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.10",
+    "vitest-axe": "^0.1.0"
   }
 }
