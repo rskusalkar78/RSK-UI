@@ -84,7 +84,7 @@ const defaultState: ThemeProviderState = {
   setTheme: () => undefined,
 };
 
-export const ThemeProviderContext = createContext<ThemeProviderState>(defaultState);
+export const ThemeProviderContext = createContext<ThemeProviderState | undefined>(undefined);
 ThemeProviderContext.displayName = 'ThemeContext';
 
 // ─── Provider ─────────────────────────────────────────────────────────────────
