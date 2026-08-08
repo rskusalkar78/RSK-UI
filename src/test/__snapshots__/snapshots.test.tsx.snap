@@ -1,0 +1,2591 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Snapshots — Alert variants > Alert destructive variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-start gap-3 rounded-lg border px-4 py-3 shadow-sm motion-safe:transition-all border-destructive-300 bg-destructive-50 text-destructive-900 dark:border-destructive-800 dark:bg-destructive-950/40 dark:text-destructive-100"
+    role="alert"
+  >
+    <div
+      class="mt-0.5 shrink-0"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-circle-alert h-4 w-4"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <line
+          x1="12"
+          x2="12"
+          y1="8"
+          y2="12"
+        />
+        <line
+          x1="12"
+          x2="12.01"
+          y1="16"
+          y2="16"
+        />
+      </svg>
+    </div>
+    <div
+      class="min-w-0 flex-1 space-y-1"
+    >
+      <div
+        class="font-medium"
+      >
+        Error
+      </div>
+      <div
+        class="text-sm opacity-90"
+      >
+        Something went wrong.
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Alert variants > Alert info variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-start gap-3 rounded-lg border px-4 py-3 shadow-sm motion-safe:transition-all border-info-300 bg-info-50 text-info-900 dark:border-info-800 dark:bg-info-950/40 dark:text-info-100"
+    role="alert"
+  >
+    <div
+      class="mt-0.5 shrink-0"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-info h-4 w-4"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <path
+          d="M12 16v-4"
+        />
+        <path
+          d="M12 8h.01"
+        />
+      </svg>
+    </div>
+    <div
+      class="min-w-0 flex-1 space-y-1"
+    >
+      <div
+        class="font-medium"
+      >
+        Information
+      </div>
+      <div
+        class="text-sm opacity-90"
+      >
+        This is an informational message.
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Alert variants > Alert success variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-start gap-3 rounded-lg border px-4 py-3 shadow-sm motion-safe:transition-all border-success-300 bg-success-50 text-success-900 dark:border-success-800 dark:bg-success-950/40 dark:text-success-100"
+    role="alert"
+  >
+    <div
+      class="mt-0.5 shrink-0"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-circle-check h-4 w-4"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <path
+          d="m9 12 2 2 4-4"
+        />
+      </svg>
+    </div>
+    <div
+      class="min-w-0 flex-1 space-y-1"
+    >
+      <div
+        class="font-medium"
+      >
+        Success!
+      </div>
+      <div
+        class="text-sm opacity-90"
+      >
+        Your changes have been saved.
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Alert variants > Alert warning variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-start gap-3 rounded-lg border px-4 py-3 shadow-sm motion-safe:transition-all border-warning-300 bg-warning-50 text-warning-900 dark:border-warning-800 dark:bg-warning-950/40 dark:text-warning-100"
+    role="alert"
+  >
+    <div
+      class="mt-0.5 shrink-0"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-triangle-alert h-4 w-4"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+        />
+        <path
+          d="M12 9v4"
+        />
+        <path
+          d="M12 17h.01"
+        />
+      </svg>
+    </div>
+    <div
+      class="min-w-0 flex-1 space-y-1"
+    >
+      <div
+        class="font-medium"
+      >
+        Warning
+      </div>
+      <div
+        class="text-sm opacity-90"
+      >
+        Please review before continuing.
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Avatar > Avatar square shape with busy status 1`] = `
+<DocumentFragment>
+  <span
+    class="relative inline-flex shrink-0 items-center justify-center overflow-hidden bg-muted font-medium text-muted-foreground select-none h-10 w-10 text-sm rounded-lg"
+  >
+    <span
+      aria-hidden="true"
+      class="flex h-full w-full items-center justify-center font-semibold uppercase tracking-wide"
+    >
+      AB
+    </span>
+    <span
+      aria-label="Busy"
+      class="absolute bottom-0 right-0 rounded-full ring-background h-2.5 w-2.5 ring-2 bg-destructive-500"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Avatar > Avatar with image and status online 1`] = `
+<DocumentFragment>
+  <span
+    class="relative inline-flex shrink-0 items-center justify-center overflow-hidden bg-muted font-medium text-muted-foreground select-none h-12 w-12 text-base rounded-full"
+  >
+    <img
+      alt="Jane Doe"
+      class="h-full w-full object-cover rounded-full invisible absolute"
+      src="https://example.com/avatar.jpg"
+    />
+    <span
+      aria-hidden="true"
+      class="flex h-full w-full items-center justify-center font-semibold uppercase tracking-wide"
+    >
+      JD
+    </span>
+    <span
+      aria-label="Online"
+      class="absolute bottom-0 right-0 rounded-full ring-background h-3 w-3 ring-2 bg-success-500"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Avatar > Avatar with initials fallback 1`] = `
+<DocumentFragment>
+  <span
+    class="relative inline-flex shrink-0 items-center justify-center overflow-hidden bg-muted font-medium text-muted-foreground select-none h-10 w-10 text-sm rounded-full"
+  >
+    <span
+      aria-hidden="true"
+      class="flex h-full w-full items-center justify-center font-semibold uppercase tracking-wide"
+    >
+      JD
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Badge > Badge default (subtle neutral) 1`] = `
+<DocumentFragment>
+  <span
+    class="inline-flex items-center font-medium rounded-full border whitespace-nowrap shrink-0 text-xs leading-none px-2 py-1 gap-1.5 bg-neutral-100 text-neutral-700 border-transparent dark:bg-neutral-800 dark:text-neutral-300"
+  >
+    Default Badge
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Badge > Badge outline success with dot 1`] = `
+<DocumentFragment>
+  <span
+    class="inline-flex items-center font-medium rounded-full border whitespace-nowrap shrink-0 text-xs leading-none px-2 py-1 gap-1.5 bg-transparent text-success-600 border-success-300 dark:text-success-400 dark:border-success-700"
+  >
+    <span
+      aria-hidden="true"
+      class="rounded-full shrink-0 h-2 w-2 bg-success-500"
+    />
+    Active
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Badge > Badge solid primary 1`] = `
+<DocumentFragment>
+  <span
+    class="inline-flex items-center font-medium rounded-full border whitespace-nowrap shrink-0 text-xs leading-none px-2 py-1 gap-1.5 bg-primary-500 text-white border-transparent"
+  >
+    Primary
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Badge > Badge subtle warning 1`] = `
+<DocumentFragment>
+  <span
+    class="inline-flex items-center font-medium rounded-full border whitespace-nowrap shrink-0 text-xs leading-none px-2 py-1 gap-1.5 bg-warning-100 text-warning-800 border-transparent dark:bg-warning-950 dark:text-warning-300"
+  >
+    Pending
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Button > Button destructive variant 1`] = `
+<DocumentFragment>
+  <button
+    aria-busy="false"
+    aria-disabled="false"
+    class="relative inline-flex items-center justify-center font-medium tracking-wide rounded-lg border cursor-pointer select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-destructive text-destructive-foreground border-transparent hover:bg-destructive/90 active:bg-destructive/80 active:scale-[0.98] shadow-sm h-9 px-4 text-sm gap-2"
+    type="button"
+  >
+    Delete
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Button > Button ghost variant 1`] = `
+<DocumentFragment>
+  <button
+    aria-busy="false"
+    aria-disabled="false"
+    class="relative inline-flex items-center justify-center font-medium tracking-wide rounded-lg border cursor-pointer select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-transparent text-foreground border-transparent hover:bg-muted active:bg-muted/80 active:scale-[0.98] h-9 px-4 text-sm gap-2"
+    type="button"
+  >
+    Ghost Button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Button > Button link variant 1`] = `
+<DocumentFragment>
+  <button
+    aria-busy="false"
+    aria-disabled="false"
+    class="relative inline-flex items-center justify-center font-medium tracking-wide rounded-lg border cursor-pointer select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-transparent text-primary border-transparent underline-offset-4 hover:underline active:opacity-80 h-9 px-4 text-sm gap-2"
+    type="button"
+  >
+    Link Button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Button > Button loading state 1`] = `
+<DocumentFragment>
+  <button
+    aria-busy="true"
+    aria-disabled="true"
+    class="relative inline-flex items-center justify-center font-medium tracking-wide rounded-lg border select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-primary text-primary-foreground border-transparent hover:bg-primary/90 active:bg-primary/80 active:scale-[0.98] shadow-sm h-9 px-4 text-sm gap-2 cursor-wait"
+    disabled=""
+    type="button"
+  >
+    <svg
+      aria-label="Submitting..."
+      aria-live="polite"
+      class="inline-block shrink-0 animate-spin motion-reduce:animate-none motion-reduce:opacity-70 text-current"
+      fill="none"
+      height="16"
+      role="status"
+      viewBox="0 0 16 16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        class="opacity-20"
+        cx="8"
+        cy="8"
+        r="5.5"
+        stroke="currentColor"
+        stroke-width="2.5"
+      />
+      <circle
+        cx="8"
+        cy="8"
+        r="5.5"
+        stroke="currentColor"
+        stroke-dasharray="34.55751918948772"
+        stroke-dashoffset="8.63937979737193"
+        stroke-linecap="round"
+        stroke-width="2.5"
+        style="transform-origin: center;"
+      />
+    </svg>
+    <span>
+      Submitting...
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Button > Button outline variant 1`] = `
+<DocumentFragment>
+  <button
+    aria-busy="false"
+    aria-disabled="false"
+    class="relative inline-flex items-center justify-center font-medium tracking-wide rounded-lg border cursor-pointer select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-transparent text-foreground border-border hover:bg-muted hover:border-ring/50 active:bg-muted/80 active:scale-[0.98] h-9 px-4 text-sm gap-2"
+    type="button"
+  >
+    Outline Button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Button > Button solid variant 1`] = `
+<DocumentFragment>
+  <button
+    aria-busy="false"
+    aria-disabled="false"
+    class="relative inline-flex items-center justify-center font-medium tracking-wide rounded-lg border cursor-pointer select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-primary text-primary-foreground border-transparent hover:bg-primary/90 active:bg-primary/80 active:scale-[0.98] shadow-sm h-9 px-4 text-sm gap-2"
+    type="button"
+  >
+    Solid Button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Button > Button with leftIcon 1`] = `
+<DocumentFragment>
+  <button
+    aria-busy="false"
+    aria-disabled="false"
+    class="relative inline-flex items-center justify-center font-medium tracking-wide rounded-lg border cursor-pointer select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-primary text-primary-foreground border-transparent hover:bg-primary/90 active:bg-primary/80 active:scale-[0.98] shadow-sm h-9 px-4 text-sm gap-2"
+    type="button"
+  >
+    <span
+      aria-hidden="true"
+      class="inline-flex shrink-0 items-center"
+    >
+      <svg
+        class="lucide lucide-plus"
+        data-testid="left-icon"
+        fill="none"
+        height="16"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 12h14"
+        />
+        <path
+          d="M12 5v14"
+        />
+      </svg>
+    </span>
+    Add Item
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Card > Card empty state 1`] = `
+<DocumentFragment>
+  <section
+    class="rounded-2xl border border-border bg-card text-card-foreground shadow-sm"
+  >
+    <div
+      class="flex items-start justify-between gap-3 border-b border-border px-5 py-4"
+    >
+      <div
+        class="space-y-1"
+      >
+        <div
+          class="font-semibold text-foreground"
+        >
+          Items
+        </div>
+      </div>
+    </div>
+    <div
+      class="p-5"
+    >
+      <div
+        class="flex flex-col items-center justify-center rounded-xl border border-dashed border-border bg-background/60 px-8 py-12 text-center shadow-sm"
+      >
+        <h3
+          class="text-lg font-semibold"
+        >
+          No data
+        </h3>
+        <p
+          class="mt-2 max-w-md text-sm text-muted-foreground"
+        >
+          There is no content to show yet.
+        </p>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Card > Card loading state 1`] = `
+<DocumentFragment>
+  <section
+    class="rounded-2xl border border-border bg-card text-card-foreground shadow-sm"
+  >
+    <div
+      class="flex items-start justify-between gap-3 border-b border-border px-5 py-4"
+    >
+      <div
+        class="space-y-1"
+      >
+        <div
+          class="font-semibold text-foreground"
+        >
+          Loading...
+        </div>
+      </div>
+    </div>
+    <div
+      class="p-5"
+    >
+      <div
+        class="space-y-3"
+      >
+        <div
+          aria-hidden="true"
+          class="animate-pulse rounded bg-neutral-200/80 dark:bg-neutral-800/80 h-4 w-full"
+          data-testid="skeleton"
+        />
+        <div
+          aria-hidden="true"
+          class="animate-pulse rounded bg-neutral-200/80 dark:bg-neutral-800/80 h-4 w-3/4"
+          data-testid="skeleton"
+        />
+        <div
+          aria-hidden="true"
+          class="animate-pulse rounded bg-neutral-200/80 dark:bg-neutral-800/80 h-4 w-1/2"
+          data-testid="skeleton"
+        />
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Card > Card with children only 1`] = `
+<DocumentFragment>
+  <section
+    class="rounded-2xl border border-border bg-card text-card-foreground shadow-sm"
+  >
+    <div
+      class="p-5"
+    >
+      <p
+        class="text-base leading-relaxed"
+      >
+        Simple card with just content.
+      </p>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Card > Card with title, description, action, children, and footer 1`] = `
+<DocumentFragment>
+  <section
+    class="rounded-2xl border border-border bg-card text-card-foreground shadow-sm"
+  >
+    <div
+      class="flex items-start justify-between gap-3 border-b border-border px-5 py-4"
+    >
+      <div
+        class="space-y-1"
+      >
+        <div
+          class="font-semibold text-foreground"
+        >
+          User Profile
+        </div>
+        <div
+          class="text-sm text-muted-foreground"
+        >
+          Manage your account settings
+        </div>
+      </div>
+      <div
+        class="shrink-0"
+      >
+        <button
+          aria-busy="false"
+          aria-disabled="false"
+          class="relative inline-flex items-center justify-center font-medium tracking-wide rounded-lg border cursor-pointer select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-transparent text-foreground border-transparent hover:bg-muted active:bg-muted/80 active:scale-[0.98] h-8 px-3 text-sm gap-1.5"
+          type="button"
+        >
+          Edit
+        </button>
+      </div>
+    </div>
+    <div
+      class="p-5"
+    >
+      <p>
+        Card content goes here with details about the user profile.
+      </p>
+    </div>
+    <div
+      class="border-t border-border px-5 py-4 text-sm text-muted-foreground"
+    >
+      Last updated: Today
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Divider > Divider horizontal dashed with label 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center gap-3 w-full"
+    data-orientation="horizontal"
+    role="none"
+  >
+    <div
+      class="flex-1 border-t border-border border-dashed"
+    />
+    <span
+      class="text-xs font-medium text-muted-foreground whitespace-nowrap px-1"
+    >
+      OR
+    </span>
+    <div
+      class="flex-1 border-t border-border border-dashed"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Divider > Divider horizontal solid 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full border-t border-border border-solid"
+    data-orientation="horizontal"
+    role="none"
+  />
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Divider > Divider vertical dotted 1`] = `
+<DocumentFragment>
+  <div
+    style="height: 40px; display: inline-flex; align-items: center;"
+  >
+    <div
+      class="inline-block self-stretch border-l border-border border-dotted"
+      data-orientation="vertical"
+      role="none"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — EmptyState > EmptyState minimal with just title 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col items-center justify-center rounded-xl border border-dashed border-border bg-background/60 px-8 py-12 text-center shadow-sm"
+  >
+    <h3
+      class="text-lg font-semibold"
+    >
+      No data available
+    </h3>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — EmptyState > EmptyState with title, description, action, and icon 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col items-center justify-center rounded-xl border border-dashed border-border bg-background/60 px-8 py-12 text-center shadow-sm"
+  >
+    <div
+      class="mb-4"
+    >
+      <svg
+        class="lucide lucide-inbox h-12 w-12"
+        data-testid="empty-icon"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="22 12 16 12 14 15 10 15 8 12 2 12"
+        />
+        <path
+          d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
+        />
+      </svg>
+    </div>
+    <h3
+      class="text-lg font-semibold"
+    >
+      No messages yet
+    </h3>
+    <p
+      class="mt-2 max-w-md text-sm text-muted-foreground"
+    >
+      Your inbox is empty. Check back later for updates.
+    </p>
+    <div
+      class="mt-6"
+    >
+      <button
+        aria-busy="false"
+        aria-disabled="false"
+        class="relative inline-flex items-center justify-center font-medium tracking-wide rounded-lg border cursor-pointer select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-primary text-primary-foreground border-transparent hover:bg-primary/90 active:bg-primary/80 active:scale-[0.98] shadow-sm h-9 px-4 text-sm gap-2"
+        type="button"
+      >
+        Refresh
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Form components > Checkbox lg indeterminate error 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex flex-col gap-0.5"
+  >
+    <label
+      class="inline-flex items-start gap-2.5 select-none cursor-pointer group"
+      for="chk-2"
+    >
+      <div
+        class="relative inline-flex items-center justify-center shrink-0 mt-0.5"
+      >
+        <input
+          aria-invalid="true"
+          class="peer sr-only"
+          id="chk-2"
+          type="checkbox"
+        />
+        <div
+          class="inline-flex items-center justify-center border transition-all duration-150 ease-in-out text-primary-foreground peer-focus-visible:ring-2 peer-focus-visible:ring-ring peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-background bg-primary border-destructive peer-checked:bg-destructive peer-checked:border-destructive w-6 h-6 rounded-md"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-minus stroke-[3] w-4 h-4"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 12h14"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        class="flex flex-col"
+      >
+        <label
+          class="inline-flex items-center gap-1 font-medium select-none text-foreground text-base"
+        >
+          <span>
+            Select all
+          </span>
+        </label>
+      </span>
+    </label>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Form components > Checkbox md checked with label and helperText 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex flex-col gap-0.5"
+  >
+    <label
+      class="inline-flex items-start gap-2.5 select-none cursor-pointer group"
+      for="chk-1"
+    >
+      <div
+        class="relative inline-flex items-center justify-center shrink-0 mt-0.5"
+      >
+        <input
+          checked=""
+          class="peer sr-only"
+          id="chk-1"
+          type="checkbox"
+        />
+        <div
+          class="inline-flex items-center justify-center border border-border bg-background transition-all duration-150 ease-in-out text-primary-foreground peer-focus-visible:ring-2 peer-focus-visible:ring-ring peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-background peer-checked:bg-primary peer-checked:border-primary w-5 h-5 rounded-md"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-check stroke-[3] opacity-0 peer-checked:opacity-100 transition-opacity w-3.5 h-3.5"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 6 9 17l-5-5"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        class="flex flex-col"
+      >
+        <label
+          class="inline-flex items-center gap-1 font-medium select-none text-foreground text-sm"
+        >
+          <span>
+            Accept terms
+          </span>
+        </label>
+        <p
+          class="text-xs text-muted-foreground leading-normal mt-0.5"
+        >
+          You must agree to continue.
+        </p>
+      </span>
+    </label>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Form components > Input lg loading state 1`] = `
+<DocumentFragment>
+  <div
+    class="relative inline-flex items-center rounded-lg border border-border transition-all duration-150 ease-in-out focus-within:border-ring focus-within:ring-2 focus-within:ring-ring/20 opacity-50 cursor-not-allowed bg-muted/30 w-64 h-10 text-base"
+  >
+    <input
+      aria-busy="true"
+      class="w-full h-full bg-transparent text-foreground placeholder:text-muted-foreground/70 focus:outline-none disabled:cursor-not-allowed px-3.5 py-2 text-base pr-1"
+      disabled=""
+      placeholder="Verifying..."
+    />
+    <span
+      class="inline-flex items-center justify-center shrink-0 text-muted-foreground px-3 text-base"
+    >
+      <svg
+        aria-label="Loading input"
+        aria-live="polite"
+        class="inline-block shrink-0 animate-spin motion-reduce:animate-none motion-reduce:opacity-70 text-current"
+        fill="none"
+        height="16"
+        role="status"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          class="opacity-20"
+          cx="8"
+          cy="8"
+          r="5.5"
+          stroke="currentColor"
+          stroke-width="2.5"
+        />
+        <circle
+          cx="8"
+          cy="8"
+          r="5.5"
+          stroke="currentColor"
+          stroke-dasharray="34.55751918948772"
+          stroke-dashoffset="8.63937979737193"
+          stroke-linecap="round"
+          stroke-width="2.5"
+          style="transform-origin: center;"
+        />
+      </svg>
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Form components > Input md with leftIcon 1`] = `
+<DocumentFragment>
+  <div
+    class="relative inline-flex items-center rounded-lg border border-border bg-background transition-all duration-150 ease-in-out focus-within:border-ring focus-within:ring-2 focus-within:ring-ring/20 w-full h-9 text-sm"
+  >
+    <span
+      aria-hidden="true"
+      class="inline-flex items-center justify-center text-muted-foreground shrink-0 select-none pointer-events-none px-2.5 text-sm"
+    >
+      <svg
+        class="lucide lucide-search"
+        data-testid="input-icon"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="11"
+          cy="11"
+          r="8"
+        />
+        <path
+          d="m21 21-4.3-4.3"
+        />
+      </svg>
+    </span>
+    <input
+      class="w-full h-full bg-transparent text-foreground placeholder:text-muted-foreground/70 focus:outline-none disabled:cursor-not-allowed px-3 py-1.5 text-sm pl-1"
+      placeholder="Search..."
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Form components > Input sm error state 1`] = `
+<DocumentFragment>
+  <div
+    class="relative inline-flex items-center rounded-lg border bg-background transition-all duration-150 ease-in-out focus-within:ring-2 border-destructive text-destructive focus-within:border-destructive focus-within:ring-destructive/20 w-64 h-8 text-xs"
+  >
+    <input
+      aria-invalid="true"
+      class="w-full h-full bg-transparent text-foreground placeholder:text-muted-foreground/70 focus:outline-none disabled:cursor-not-allowed px-2.5 py-1 text-xs"
+      value="invalid"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Form components > Radio md checked with label 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex flex-col gap-0.5"
+  >
+    <label
+      class="inline-flex items-start gap-2.5 select-none cursor-pointer group"
+      for="rad-1"
+    >
+      <div
+        class="relative inline-flex items-center justify-center shrink-0 mt-0.5"
+      >
+        <input
+          checked=""
+          class="peer sr-only"
+          id="rad-1"
+          name="option"
+          type="radio"
+          value="a"
+        />
+        <div
+          class="rounded-full border border-border bg-background transition-all duration-150 ease-in-out inline-flex items-center justify-center peer-focus-visible:ring-2 peer-focus-visible:ring-ring peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-background peer-checked:border-primary w-5 h-5"
+        >
+          <span
+            class="rounded-full bg-primary opacity-0 transition-opacity peer-checked:opacity-100 w-2 h-2"
+          />
+        </div>
+      </div>
+      <span
+        class="flex flex-col"
+      >
+        <label
+          class="inline-flex items-center gap-1 font-medium select-none text-foreground text-sm"
+        >
+          <span>
+            Option A
+          </span>
+        </label>
+      </span>
+    </label>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Form components > Radio sm disabled with helper text 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex flex-col gap-0.5"
+  >
+    <label
+      class="inline-flex items-start gap-2.5 select-none group cursor-not-allowed opacity-50"
+      for="rad-2"
+    >
+      <div
+        class="relative inline-flex items-center justify-center shrink-0 mt-0.5"
+      >
+        <input
+          class="peer sr-only"
+          disabled=""
+          id="rad-2"
+          name="opt"
+          type="radio"
+          value="b"
+        />
+        <div
+          class="rounded-full border border-border bg-background transition-all duration-150 ease-in-out inline-flex items-center justify-center peer-focus-visible:ring-2 peer-focus-visible:ring-ring peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-background peer-checked:border-primary w-4 h-4"
+        >
+          <span
+            class="rounded-full bg-primary opacity-0 transition-opacity peer-checked:opacity-100 w-1.5 h-1.5"
+          />
+        </div>
+      </div>
+      <span
+        class="flex flex-col"
+      >
+        <label
+          class="inline-flex items-center gap-1 font-medium select-none text-foreground text-xs cursor-not-allowed opacity-50"
+        >
+          <span>
+            Unavailable
+          </span>
+        </label>
+        <p
+          class="text-xs text-muted-foreground leading-normal opacity-50 mt-0.5"
+        >
+          This option is currently disabled.
+        </p>
+      </span>
+    </label>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Form components > Select lg loading with grouped options 1`] = `
+<DocumentFragment>
+  <div
+    class="relative inline-flex items-center rounded-lg border border-border transition-all duration-150 ease-in-out focus-within:border-ring focus-within:ring-2 focus-within:ring-ring/20 opacity-50 cursor-not-allowed bg-muted/30 w-64 h-10 text-base"
+  >
+    <select
+      aria-busy="true"
+      class="w-full h-full appearance-none bg-transparent text-foreground cursor-pointer focus:outline-none disabled:cursor-not-allowed pl-3.5 pr-9 py-2 text-base"
+      disabled=""
+    >
+      <optgroup
+        label="Fruits"
+      >
+        <option
+          value="apple"
+        >
+          Apple
+        </option>
+      </optgroup>
+      <optgroup
+        label="Vegetables"
+      >
+        <option
+          value="carrot"
+        >
+          Carrot
+        </option>
+      </optgroup>
+    </select>
+    <span
+      aria-hidden="true"
+      class="absolute pointer-events-none inline-flex items-center justify-center text-muted-foreground shrink-0 right-3 w-4 h-4"
+    >
+      <svg
+        aria-label="Loading options"
+        aria-live="polite"
+        class="inline-block shrink-0 animate-spin motion-reduce:animate-none motion-reduce:opacity-70 text-current"
+        fill="none"
+        height="16"
+        role="status"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          class="opacity-20"
+          cx="8"
+          cy="8"
+          r="5.5"
+          stroke="currentColor"
+          stroke-width="2.5"
+        />
+        <circle
+          cx="8"
+          cy="8"
+          r="5.5"
+          stroke="currentColor"
+          stroke-dasharray="34.55751918948772"
+          stroke-dashoffset="8.63937979737193"
+          stroke-linecap="round"
+          stroke-width="2.5"
+          style="transform-origin: center;"
+        />
+      </svg>
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Form components > Select md with placeholder and options 1`] = `
+<DocumentFragment>
+  <div
+    class="relative inline-flex items-center rounded-lg border border-border bg-background transition-all duration-150 ease-in-out focus-within:border-ring focus-within:ring-2 focus-within:ring-ring/20 w-full h-9 text-sm"
+  >
+    <select
+      class="w-full h-full appearance-none bg-transparent text-foreground cursor-pointer focus:outline-none disabled:cursor-not-allowed pl-3 pr-8 py-1.5 text-sm"
+    >
+      <option
+        disabled=""
+        hidden=""
+        value=""
+      >
+        Select a country...
+      </option>
+      <option
+        value="us"
+      >
+        United States
+      </option>
+      <option
+        value="ca"
+      >
+        Canada
+      </option>
+      <option
+        value="uk"
+      >
+        United Kingdom
+      </option>
+    </select>
+    <span
+      aria-hidden="true"
+      class="absolute pointer-events-none inline-flex items-center justify-center text-muted-foreground shrink-0 right-2.5 w-4 h-4"
+    >
+      <svg
+        class="lucide lucide-chevron-down w-full h-full shrink-0"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m6 9 6 6 6-6"
+        />
+      </svg>
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Form components > Switch md checked with label 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex flex-col gap-0.5"
+  >
+    <label
+      class="inline-flex items-start gap-2.5 select-none cursor-pointer group"
+      for="swt-1"
+    >
+      <div
+        class="relative inline-flex items-center shrink-0 mt-0.5"
+      >
+        <input
+          checked=""
+          class="peer sr-only"
+          id="swt-1"
+          role="switch"
+          type="checkbox"
+        />
+        <div
+          class="rounded-full border border-transparent bg-muted transition-colors duration-200 ease-in-out inline-flex items-center peer-focus-visible:ring-2 peer-focus-visible:ring-ring peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-background peer-checked:bg-primary w-9 h-5 p-0.5"
+        >
+          <span
+            class="rounded-full bg-background shadow-md transition-transform duration-200 ease-in-out w-4 h-4 peer-checked:translate-x-4"
+          />
+        </div>
+      </div>
+      <span
+        class="flex flex-col"
+      >
+        <label
+          class="inline-flex items-center gap-1 font-medium select-none text-foreground text-sm"
+        >
+          <span>
+            Enable notifications
+          </span>
+        </label>
+      </span>
+    </label>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Form components > Switch sm error disabled 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex flex-col gap-0.5"
+  >
+    <label
+      class="inline-flex items-start gap-2.5 select-none group cursor-not-allowed opacity-50"
+      for="swt-2"
+    >
+      <div
+        class="relative inline-flex items-center shrink-0 mt-0.5"
+      >
+        <input
+          aria-invalid="true"
+          class="peer sr-only"
+          disabled=""
+          id="swt-2"
+          role="switch"
+          type="checkbox"
+        />
+        <div
+          class="rounded-full border border-transparent transition-colors duration-200 ease-in-out inline-flex items-center peer-focus-visible:ring-2 peer-focus-visible:ring-ring peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-background bg-destructive/30 peer-checked:bg-destructive w-7 h-4 p-0.5"
+        >
+          <span
+            class="rounded-full bg-background shadow-md transition-transform duration-200 ease-in-out w-3 h-3 peer-checked:translate-x-3"
+          />
+        </div>
+      </div>
+      <span
+        class="flex flex-col"
+      >
+        <label
+          class="inline-flex items-center gap-1 font-medium select-none text-foreground text-xs cursor-not-allowed opacity-50"
+        >
+          <span>
+            Premium feature
+          </span>
+        </label>
+        <p
+          class="text-xs text-muted-foreground leading-normal opacity-50 mt-0.5"
+        >
+          Upgrade to enable.
+        </p>
+      </span>
+    </label>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Form components > Textarea md with resize vertical and maxLength 1`] = `
+<DocumentFragment>
+  <div
+    class="relative inline-flex flex-col w-full"
+  >
+    <textarea
+      class="w-full rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground/70 transition-all duration-150 ease-in-out focus:outline-none focus:border-ring focus:ring-2 focus:ring-ring/20 px-3 py-2 text-sm min-h-[90px] resize-y"
+      maxlength="200"
+      placeholder="Enter your bio..."
+    >
+      Hello
+    </textarea>
+    <div
+      class="mt-1 flex items-center justify-between gap-2 text-xs text-muted-foreground"
+    >
+      <div />
+      <span
+        class="ml-auto font-mono text-[11px]"
+      >
+        5/200
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Form components > Textarea sm error loading 1`] = `
+<DocumentFragment>
+  <div
+    class="relative inline-flex flex-col w-64"
+  >
+    <textarea
+      aria-busy="true"
+      aria-invalid="true"
+      class="w-full rounded-lg border placeholder:text-muted-foreground/70 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 border-destructive text-destructive focus:border-destructive focus:ring-destructive/20 opacity-50 cursor-not-allowed bg-muted/30 px-2.5 py-1.5 text-xs min-h-[70px] resize-y"
+      disabled=""
+    />
+    <div
+      class="mt-1 flex items-center justify-between gap-2 text-xs text-muted-foreground"
+    >
+      <div>
+        <span
+          class="inline-flex items-center gap-1.5"
+        >
+          <svg
+            aria-label="Loading content"
+            aria-live="polite"
+            class="inline-block shrink-0 animate-spin motion-reduce:animate-none motion-reduce:opacity-70 text-current"
+            fill="none"
+            height="12"
+            role="status"
+            viewBox="0 0 12 12"
+            width="12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              class="opacity-20"
+              cx="6"
+              cy="6"
+              r="3.5"
+              stroke="currentColor"
+              stroke-width="2.5"
+            />
+            <circle
+              cx="6"
+              cy="6"
+              r="3.5"
+              stroke="currentColor"
+              stroke-dasharray="21.991148575128552"
+              stroke-dashoffset="5.497787143782138"
+              stroke-linecap="round"
+              stroke-width="2.5"
+              style="transform-origin: center;"
+            />
+          </svg>
+          <span>
+            Loading…
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — IconButton > IconButton destructive sm 1`] = `
+<DocumentFragment>
+  <button
+    aria-busy="false"
+    aria-disabled="false"
+    aria-label="Delete"
+    class="relative inline-flex items-center justify-center shrink-0 border cursor-pointer select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-destructive text-destructive-foreground border-transparent hover:bg-destructive/90 active:bg-destructive/80 active:scale-95 shadow-sm h-8 w-8 text-sm rounded-lg"
+    type="button"
+  >
+    <span
+      aria-hidden="true"
+      class="inline-flex items-center justify-center"
+      style="width: 15px; height: 15px;"
+    >
+      <svg
+        class="lucide lucide-trash2"
+        data-testid="icon-trash"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3 6h18"
+        />
+        <path
+          d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+        />
+        <path
+          d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+        />
+        <line
+          x1="10"
+          x2="10"
+          y1="11"
+          y2="17"
+        />
+        <line
+          x1="14"
+          x2="14"
+          y1="11"
+          y2="17"
+        />
+      </svg>
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — IconButton > IconButton ghost md 1`] = `
+<DocumentFragment>
+  <button
+    aria-busy="false"
+    aria-disabled="false"
+    aria-label="Search"
+    class="relative inline-flex items-center justify-center shrink-0 border cursor-pointer select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-transparent text-foreground border-transparent hover:bg-muted active:bg-muted/80 active:scale-95 h-9 w-9 text-sm rounded-lg"
+    type="button"
+  >
+    <span
+      aria-hidden="true"
+      class="inline-flex items-center justify-center"
+      style="width: 16px; height: 16px;"
+    >
+      <svg
+        class="lucide lucide-search"
+        data-testid="icon-search"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="11"
+          cy="11"
+          r="8"
+        />
+        <path
+          d="m21 21-4.3-4.3"
+        />
+      </svg>
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — IconButton > IconButton outline square with loading 1`] = `
+<DocumentFragment>
+  <button
+    aria-busy="true"
+    aria-disabled="true"
+    aria-label="Loading"
+    class="relative inline-flex items-center justify-center shrink-0 border select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-transparent text-foreground border-border hover:bg-muted hover:border-ring/50 active:bg-muted/80 active:scale-95 h-9 w-9 text-sm rounded-none cursor-wait"
+    disabled=""
+    type="button"
+  >
+    <svg
+      aria-label="Loading…"
+      aria-live="polite"
+      class="inline-block shrink-0 animate-spin motion-reduce:animate-none motion-reduce:opacity-70 text-current"
+      fill="none"
+      height="12"
+      role="status"
+      viewBox="0 0 12 12"
+      width="12"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        class="opacity-20"
+        cx="6"
+        cy="6"
+        r="3.5"
+        stroke="currentColor"
+        stroke-width="2.5"
+      />
+      <circle
+        cx="6"
+        cy="6"
+        r="3.5"
+        stroke="currentColor"
+        stroke-dasharray="21.991148575128552"
+        stroke-dashoffset="5.497787143782138"
+        stroke-linecap="round"
+        stroke-width="2.5"
+        style="transform-origin: center;"
+      />
+    </svg>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — IconButton > IconButton solid circle lg 1`] = `
+<DocumentFragment>
+  <button
+    aria-busy="false"
+    aria-disabled="false"
+    aria-label="Add item"
+    class="relative inline-flex items-center justify-center shrink-0 border cursor-pointer select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-primary text-primary-foreground border-transparent hover:bg-primary/90 active:bg-primary/80 active:scale-95 shadow-sm h-10 w-10 text-base rounded-full"
+    type="button"
+  >
+    <span
+      aria-hidden="true"
+      class="inline-flex items-center justify-center"
+      style="width: 18px; height: 18px;"
+    >
+      <svg
+        class="lucide lucide-plus"
+        data-testid="icon-plus"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 12h14"
+        />
+        <path
+          d="M12 5v14"
+        />
+      </svg>
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Layout components > Container xl padded centered 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 mx-auto"
+  >
+    <p>
+      Container content
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Layout components > Flex row center gap-4 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-row flex-nowrap gap-4 items-center justify-between"
+  >
+    <span>
+      Left
+    </span>
+    <span>
+      Center
+    </span>
+    <span>
+      Right
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Layout components > Grid responsive cols gap-6 1`] = `
+<DocumentFragment>
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+  >
+    <div>
+      Item 1
+    </div>
+    <div>
+      Item 2
+    </div>
+    <div>
+      Item 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Layout components > Hero with heading, subheading, actions, and gradient 1`] = `
+<DocumentFragment>
+  <section
+    class="relative w-full overflow-hidden py-16 md:py-24 bg-gradient-to-br from-primary/20 via-primary/5 to-background"
+  >
+    <div
+      aria-hidden="true"
+      class="pointer-events-none absolute inset-0 overflow-hidden"
+    >
+      <div
+        class="absolute -top-40 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-primary/10 blur-3xl"
+      />
+    </div>
+    <div
+      class="relative mx-auto flex w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 flex-col gap-8 items-center"
+    >
+      <div
+        class="flex flex-col gap-6 w-full items-center text-center"
+      >
+        <span
+          class="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary"
+        >
+          New Release
+        </span>
+        <div
+          class="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-6xl"
+        >
+          <h1>
+            Welcome to RSK-UI
+          </h1>
+        </div>
+        <div
+          class="text-lg leading-relaxed text-muted-foreground max-w-2xl mx-auto"
+        >
+          A production-ready design system for building beautiful interfaces.
+        </div>
+        <div
+          class="flex flex-wrap gap-4 pt-2 justify-center"
+        >
+          <button
+            aria-busy="false"
+            aria-disabled="false"
+            class="relative inline-flex items-center justify-center font-medium tracking-wide rounded-lg border cursor-pointer select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-primary text-primary-foreground border-transparent hover:bg-primary/90 active:bg-primary/80 active:scale-[0.98] shadow-sm h-9 px-4 text-sm gap-2"
+            type="button"
+          >
+            Get Started
+          </button>
+          <button
+            aria-busy="false"
+            aria-disabled="false"
+            class="relative inline-flex items-center justify-center font-medium tracking-wide rounded-lg border cursor-pointer select-none transition-all duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none bg-transparent text-foreground border-border hover:bg-muted hover:border-ring/50 active:bg-muted/80 active:scale-[0.98] h-9 px-4 text-sm gap-2"
+            type="button"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Layout components > Page with header, footer, sidebar 1`] = `
+<DocumentFragment>
+  <div
+    class="flex min-h-screen flex-col bg-background text-foreground"
+  >
+    <a
+      class="sr-only focus-visible:not-sr-only fixed left-4 top-4 z-[9999] rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      href="#main-content"
+    >
+      Skip to content
+    </a>
+    <header
+      class="shrink-0"
+    >
+      <div>
+        Header Content
+      </div>
+    </header>
+    <div
+      class="flex flex-1 overflow-hidden"
+    >
+      <aside
+        class="shrink-0 overflow-y-auto"
+      >
+        <div>
+          Sidebar Menu
+        </div>
+      </aside>
+      <main
+        class="min-w-0 flex-1 overflow-y-auto focus:outline-none"
+        id="main-content"
+        tabindex="-1"
+      >
+        <div
+          class="w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 mx-auto"
+        >
+          <p>
+            Main page content
+          </p>
+        </div>
+      </main>
+    </div>
+    <footer
+      class="shrink-0"
+    >
+      <div>
+        Footer Content
+      </div>
+    </footer>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Layout components > Section md spacing muted background 1`] = `
+<DocumentFragment>
+  <section
+    aria-label="Features"
+    class="py-12 bg-muted"
+  >
+    <div
+      class="w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 mx-auto"
+    >
+      <p>
+        Section content
+      </p>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Layout components > Spacer size 8 both axes 1`] = `
+<DocumentFragment>
+  <div>
+    <p>
+      Before spacer
+    </p>
+    <div
+      aria-hidden="true"
+      class="shrink-0 w-8 h-8"
+      role="presentation"
+    />
+    <p>
+      After spacer
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Layout components > Stack vertical gap-3 with dividers 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col gap-3 items-stretch justify-start"
+  >
+    <div>
+      First
+    </div>
+    <hr
+      aria-hidden="true"
+      class="w-full border-t border-border"
+    />
+    <div>
+      Second
+    </div>
+    <hr
+      aria-hidden="true"
+      class="w-full border-t border-border"
+    />
+    <div>
+      Third
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Progress > Progress lg size at 100% 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full"
+  >
+    <div
+      class="flex items-center justify-between gap-3"
+    >
+      <span
+        class="text-sm font-medium"
+      >
+        Complete
+      </span>
+      <span
+        class="text-sm text-muted-foreground"
+      >
+        100%
+      </span>
+    </div>
+    <div
+      aria-label="Complete"
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="100"
+      class="mt-2 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800 h-4"
+      role="progressbar"
+    >
+      <div
+        class="h-full rounded-full bg-primary-500 transition-[width] duration-300 ease-out"
+        style="width: 100%;"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Progress > Progress md size with label 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full"
+  >
+    <div
+      class="flex items-center justify-between gap-3"
+    >
+      <span
+        class="text-sm font-medium"
+      >
+        Uploading...
+      </span>
+      <span
+        class="text-sm text-muted-foreground"
+      >
+        65%
+      </span>
+    </div>
+    <div
+      aria-label="Uploading..."
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="65"
+      class="mt-2 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800 h-3"
+      role="progressbar"
+    >
+      <div
+        class="h-full rounded-full bg-primary-500 transition-[width] duration-300 ease-out"
+        style="width: 65%;"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Progress > Progress sm size no label 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full"
+  >
+    <div
+      class="flex items-center justify-between gap-3"
+    >
+      <span
+        class="text-sm text-muted-foreground"
+      >
+        33%
+      </span>
+    </div>
+    <div
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="33"
+      class="mt-2 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800 h-2"
+      role="progressbar"
+    >
+      <div
+        class="h-full rounded-full bg-primary-500 transition-[width] duration-300 ease-out"
+        style="width: 33%;"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Skeleton > Skeleton asChild with children 1`] = `
+<DocumentFragment>
+  <div
+    aria-hidden="true"
+    class="pointer-events-none animate-pulse bg-neutral-200/80 dark:bg-neutral-800/80 h-16 w-16 rounded-full"
+  >
+    <span />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Skeleton > Skeleton default 1`] = `
+<DocumentFragment>
+  <div
+    aria-hidden="true"
+    class="animate-pulse rounded bg-neutral-200/80 dark:bg-neutral-800/80 h-4 w-48"
+    data-testid="skeleton"
+  />
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Skeleton > Skeleton stack with multiple 1`] = `
+<DocumentFragment>
+  <div
+    class="space-y-3"
+  >
+    <div
+      aria-hidden="true"
+      class="animate-pulse rounded bg-neutral-200/80 dark:bg-neutral-800/80 h-4 w-full"
+      data-testid="skeleton"
+    />
+    <div
+      aria-hidden="true"
+      class="animate-pulse rounded bg-neutral-200/80 dark:bg-neutral-800/80 h-4 w-3/4"
+      data-testid="skeleton"
+    />
+    <div
+      aria-hidden="true"
+      class="animate-pulse rounded bg-neutral-200/80 dark:bg-neutral-800/80 h-4 w-1/2"
+      data-testid="skeleton"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Spinner > Spinner default md size 1`] = `
+<DocumentFragment>
+  <svg
+    aria-label="Loading…"
+    aria-live="polite"
+    class="inline-block shrink-0 animate-spin motion-reduce:animate-none motion-reduce:opacity-70 text-current"
+    fill="none"
+    height="20"
+    role="status"
+    viewBox="0 0 20 20"
+    width="20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      class="opacity-20"
+      cx="10"
+      cy="10"
+      r="8"
+      stroke="currentColor"
+      stroke-width="2"
+    />
+    <circle
+      cx="10"
+      cy="10"
+      r="8"
+      stroke="currentColor"
+      stroke-dasharray="50.26548245743669"
+      stroke-dashoffset="12.566370614359172"
+      stroke-linecap="round"
+      stroke-width="2"
+      style="transform-origin: center;"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Spinner > Spinner destructive sm size 1`] = `
+<DocumentFragment>
+  <svg
+    aria-label="Loading…"
+    aria-live="polite"
+    class="inline-block shrink-0 animate-spin motion-reduce:animate-none motion-reduce:opacity-70 text-destructive-500"
+    fill="none"
+    height="16"
+    role="status"
+    viewBox="0 0 16 16"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      class="opacity-20"
+      cx="8"
+      cy="8"
+      r="5.5"
+      stroke="currentColor"
+      stroke-width="2.5"
+    />
+    <circle
+      cx="8"
+      cy="8"
+      r="5.5"
+      stroke="currentColor"
+      stroke-dasharray="34.55751918948772"
+      stroke-dashoffset="8.63937979737193"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      style="transform-origin: center;"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Spinner > Spinner primary xl size 1`] = `
+<DocumentFragment>
+  <svg
+    aria-label="Loading data"
+    aria-live="polite"
+    class="inline-block shrink-0 animate-spin motion-reduce:animate-none motion-reduce:opacity-70 text-primary-500"
+    fill="none"
+    height="36"
+    role="status"
+    viewBox="0 0 36 36"
+    width="36"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      class="opacity-20"
+      cx="18"
+      cy="18"
+      r="16.25"
+      stroke="currentColor"
+      stroke-width="1.75"
+    />
+    <circle
+      cx="18"
+      cy="18"
+      r="16.25"
+      stroke="currentColor"
+      stroke-dasharray="102.10176124166827"
+      stroke-dashoffset="25.525440310417068"
+      stroke-linecap="round"
+      stroke-width="1.75"
+      style="transform-origin: center;"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Tabs > Tabs horizontal line variant with 3 tabs 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full"
+  >
+    <div
+      aria-orientation="horizontal"
+      class="flex flex-row border-b border-border"
+      role="tablist"
+    >
+      <button
+        aria-controls="panel-tab-1"
+        aria-selected="true"
+        class="inline-flex items-center justify-center gap-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed hover:text-foreground data-[active=false]:text-muted-foreground text-sm px-4 py-2 border-b-2 border-transparent data-[active=true]:border-primary data-[active=true]:text-primary"
+        data-active="true"
+        data-tab-id="tab-1"
+        role="tab"
+        tabindex="0"
+      >
+        <span
+          class="shrink-0"
+        >
+          <svg
+            class="lucide lucide-user"
+            data-testid="tab-icon-1"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"
+            />
+            <circle
+              cx="12"
+              cy="7"
+              r="4"
+            />
+          </svg>
+        </span>
+        <span>
+          Overview
+        </span>
+      </button>
+      <button
+        aria-controls="panel-tab-2"
+        aria-selected="false"
+        class="inline-flex items-center justify-center gap-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed hover:text-foreground data-[active=false]:text-muted-foreground text-sm px-4 py-2 border-b-2 border-transparent data-[active=true]:border-primary data-[active=true]:text-primary"
+        data-active="false"
+        data-tab-id="tab-2"
+        role="tab"
+        tabindex="-1"
+      >
+        <span
+          class="shrink-0"
+        >
+          <svg
+            class="lucide lucide-settings"
+            data-testid="tab-icon-2"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+            />
+            <circle
+              cx="12"
+              cy="12"
+              r="3"
+            />
+          </svg>
+        </span>
+        <span>
+          Settings
+        </span>
+      </button>
+      <button
+        aria-controls="panel-tab-3"
+        aria-selected="false"
+        class="inline-flex items-center justify-center gap-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed hover:text-foreground data-[active=false]:text-muted-foreground text-sm px-4 py-2 border-b-2 border-transparent data-[active=true]:border-primary data-[active=true]:text-primary"
+        data-active="false"
+        data-tab-id="tab-3"
+        role="tab"
+        tabindex="-1"
+      >
+        <span
+          class="shrink-0"
+        >
+          <svg
+            class="lucide lucide-mail"
+            data-testid="tab-icon-3"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="16"
+              rx="2"
+              width="20"
+              x="2"
+              y="4"
+            />
+            <path
+              d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+            />
+          </svg>
+        </span>
+        <span>
+          Messages
+        </span>
+        <span
+          class="shrink-0"
+        >
+          <span
+            class="inline-flex items-center font-medium rounded-full border whitespace-nowrap shrink-0 text-[10px] leading-none px-1.5 py-0.5 gap-1 bg-primary-100 text-primary-800 border-transparent dark:bg-primary-950 dark:text-primary-300"
+          >
+            5
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="flex-1"
+    >
+      <div
+        aria-labelledby="tab-1"
+        class="pt-4"
+        id="panel-tab-1"
+        role="tabpanel"
+      >
+        <p>
+          Overview content goes here.
+        </p>
+      </div>
+      <div
+        aria-labelledby="tab-2"
+        class="pt-4"
+        hidden=""
+        id="panel-tab-2"
+        role="tabpanel"
+      >
+        <p>
+          Settings panel content.
+        </p>
+      </div>
+      <div
+        aria-labelledby="tab-3"
+        class="pt-4"
+        hidden=""
+        id="panel-tab-3"
+        role="tabpanel"
+      >
+        <p>
+          Messages content here.
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Tabs > Tabs vertical pills variant with 3 tabs 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full flex gap-4"
+  >
+    <div
+      aria-orientation="vertical"
+      class="flex flex-col gap-2 p-1 bg-muted/50 rounded-lg"
+      role="tablist"
+    >
+      <button
+        aria-controls="panel-v1"
+        aria-selected="true"
+        class="inline-flex items-center gap-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed hover:text-foreground data-[active=false]:text-muted-foreground text-xs px-3 py-1.5 rounded-md data-[active=true]:bg-card data-[active=true]:shadow-sm justify-start"
+        data-active="true"
+        data-tab-id="v1"
+        role="tab"
+        tabindex="0"
+      >
+        <span>
+          General
+        </span>
+      </button>
+      <button
+        aria-controls="panel-v2"
+        aria-selected="false"
+        class="inline-flex items-center gap-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed hover:text-foreground data-[active=false]:text-muted-foreground text-xs px-3 py-1.5 rounded-md data-[active=true]:bg-card data-[active=true]:shadow-sm justify-start"
+        data-active="false"
+        data-tab-id="v2"
+        role="tab"
+        tabindex="-1"
+      >
+        <span>
+          Security
+        </span>
+      </button>
+      <button
+        aria-controls="panel-v3"
+        aria-selected="false"
+        class="inline-flex items-center gap-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed hover:text-foreground data-[active=false]:text-muted-foreground text-xs px-3 py-1.5 rounded-md data-[active=true]:bg-card data-[active=true]:shadow-sm justify-start"
+        data-active="false"
+        data-tab-id="v3"
+        role="tab"
+        tabindex="-1"
+      >
+        <span>
+          Notifications
+        </span>
+      </button>
+    </div>
+    <div
+      class="flex-1 min-w-0"
+    >
+      <div
+        aria-labelledby="v1"
+        class="pt-4"
+        id="panel-v1"
+        role="tabpanel"
+      >
+        <p>
+          General settings
+        </p>
+      </div>
+      <div
+        aria-labelledby="v2"
+        class="pt-4"
+        hidden=""
+        id="panel-v2"
+        role="tabpanel"
+      >
+        <p>
+          Security options
+        </p>
+      </div>
+      <div
+        aria-labelledby="v3"
+        class="pt-4"
+        hidden=""
+        id="panel-v3"
+        role="tabpanel"
+      >
+        <p>
+          Notification preferences
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — ThemeToggle > ThemeToggle icon variant md 1`] = `
+<DocumentFragment>
+  <button
+    aria-checked="false"
+    aria-label="Switch to dark mode"
+    class="relative inline-flex items-center justify-center rounded-lg border border-border bg-background text-foreground cursor-pointer select-none transition-all duration-150 ease-in-out hover:bg-muted hover:border-ring/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-95 motion-reduce:transition-none motion-reduce:active:scale-100 h-9 w-9"
+    role="switch"
+    title="Switch to dark mode"
+    type="button"
+  >
+    <span
+      class="flex items-center justify-center transition-transform duration-300 ease-spring motion-reduce:transition-none"
+      style="transform: rotate(0deg) scale(1);"
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        height="16"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="16"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="4"
+        />
+        <path
+          d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+        />
+      </svg>
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — ThemeToggle > ThemeToggle icon variant sm with label 1`] = `
+<DocumentFragment>
+  <button
+    aria-checked="false"
+    aria-label="Switch to dark mode"
+    class="relative inline-flex items-center justify-center rounded-lg border border-border bg-background text-foreground cursor-pointer select-none transition-all duration-150 ease-in-out hover:bg-muted hover:border-ring/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-95 motion-reduce:transition-none motion-reduce:active:scale-100 h-8 w-auto gap-2 px-3"
+    role="switch"
+    title="Switch to dark mode"
+    type="button"
+  >
+    <span
+      class="flex items-center justify-center transition-transform duration-300 ease-spring motion-reduce:transition-none"
+      style="transform: rotate(0deg) scale(1);"
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        height="14"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="14"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="4"
+        />
+        <path
+          d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+        />
+      </svg>
+    </span>
+    <span
+      aria-hidden="true"
+      class="text-xs font-medium leading-none"
+    >
+      Light
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Toast > Toast open info variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex w-full max-w-md items-start gap-3 rounded-lg border px-4 py-3 shadow-lg border-info-300 bg-info-50 text-info-900 dark:border-info-800 dark:bg-info-950/40 dark:text-info-100"
+    role="status"
+  >
+    <div
+      class="mt-0.5 shrink-0"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-info h-4 w-4"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <path
+          d="M12 16v-4"
+        />
+        <path
+          d="M12 8h.01"
+        />
+      </svg>
+    </div>
+    <div
+      class="min-w-0 flex-1 space-y-1"
+    >
+      <div
+        class="font-medium"
+      >
+        Notification
+      </div>
+      <div
+        class="text-sm opacity-90"
+      >
+        You have a new message.
+      </div>
+    </div>
+    <button
+      aria-label="Dismiss notification"
+      class="shrink-0 rounded p-1 text-current/70 transition hover:text-current"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-x h-4 w-4"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 6 6 18"
+        />
+        <path
+          d="m6 6 12 12"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Toast > Toast open success variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex w-full max-w-md items-start gap-3 rounded-lg border px-4 py-3 shadow-lg border-success-300 bg-success-50 text-success-900 dark:border-success-800 dark:bg-success-950/40 dark:text-success-100"
+    role="status"
+  >
+    <div
+      class="mt-0.5 shrink-0"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-circle-check h-4 w-4"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <path
+          d="m9 12 2 2 4-4"
+        />
+      </svg>
+    </div>
+    <div
+      class="min-w-0 flex-1 space-y-1"
+    >
+      <div
+        class="font-medium"
+      >
+        Saved!
+      </div>
+      <div
+        class="text-sm opacity-90"
+      >
+        Document saved successfully.
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Typography variants > Typography blockquote 1`] = `
+<DocumentFragment>
+  <blockquote
+    class="text-base leading-relaxed border-l-4 pl-4 italic"
+  >
+    "This is a quoted block of text."
+  </blockquote>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Typography variants > Typography code 1`] = `
+<DocumentFragment>
+  <code
+    class="relative rounded px-1.5 py-0.5 bg-muted text-foreground font-mono text-sm border border-border"
+  >
+    const greeting = "Hello, World!"
+  </code>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Typography variants > Typography h1 1`] = `
+<DocumentFragment>
+  <h1
+    class="scroll-m-20 text-4xl font-extrabold tracking-tight leading-tight"
+  >
+    Heading 1
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Typography variants > Typography h2 1`] = `
+<DocumentFragment>
+  <h2
+    class="scroll-m-20 text-3xl font-bold tracking-tight leading-tight"
+  >
+    Heading 2
+  </h2>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Typography variants > Typography h3 1`] = `
+<DocumentFragment>
+  <h3
+    class="scroll-m-20 text-2xl font-semibold tracking-tight leading-snug"
+  >
+    Heading 3
+  </h3>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Typography variants > Typography h4 1`] = `
+<DocumentFragment>
+  <h4
+    class="scroll-m-20 text-xl font-semibold tracking-tight leading-snug"
+  >
+    Heading 4
+  </h4>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Typography variants > Typography h5 1`] = `
+<DocumentFragment>
+  <h5
+    class="scroll-m-20 text-lg font-semibold leading-snug"
+  >
+    Heading 5
+  </h5>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Typography variants > Typography h6 1`] = `
+<DocumentFragment>
+  <h6
+    class="scroll-m-20 text-base font-semibold leading-normal"
+  >
+    Heading 6
+  </h6>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Typography variants > Typography p (body) 1`] = `
+<DocumentFragment>
+  <p
+    class="text-base leading-relaxed"
+  >
+    This is a paragraph of body text.
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Snapshots — Typography variants > Typography small 1`] = `
+<DocumentFragment>
+  <small
+    class="text-xs leading-normal"
+  >
+    This is small caption text.
+  </small>
+</DocumentFragment>
+`;
