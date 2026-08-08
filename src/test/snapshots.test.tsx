@@ -650,21 +650,21 @@ describe('Snapshots — Form components', () => {
 
   it('Checkbox md checked with label and helperText', () => {
     const { asFragment } = renderWithTheme(
-      <Checkbox label="Accept terms" helperText="You must agree to continue." defaultChecked />
+      <Checkbox id="chk-1" label="Accept terms" helperText="You must agree to continue." defaultChecked />
     );
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('Checkbox lg indeterminate error', () => {
     const { asFragment } = renderWithTheme(
-      <Checkbox size="lg" isIndeterminate isError label="Select all" />
+      <Checkbox id="chk-2" size="lg" isIndeterminate isError label="Select all" />
     );
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('Radio md checked with label', () => {
     const { asFragment } = renderWithTheme(
-      <Radio name="option" value="a" label="Option A" defaultChecked />
+      <Radio id="rad-1" name="option" value="a" label="Option A" defaultChecked />
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -672,6 +672,7 @@ describe('Snapshots — Form components', () => {
   it('Radio sm disabled with helper text', () => {
     const { asFragment } = renderWithTheme(
       <Radio
+        id="rad-2"
         size="sm"
         name="opt"
         value="b"
@@ -684,13 +685,13 @@ describe('Snapshots — Form components', () => {
   });
 
   it('Switch md checked with label', () => {
-    const { asFragment } = renderWithTheme(<Switch label="Enable notifications" defaultChecked />);
+    const { asFragment } = renderWithTheme(<Switch id="swt-1" label="Enable notifications" defaultChecked />);
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('Switch sm error disabled', () => {
     const { asFragment } = renderWithTheme(
-      <Switch size="sm" label="Premium feature" isError disabled helperText="Upgrade to enable." />
+      <Switch id="swt-2" size="sm" label="Premium feature" isError disabled helperText="Upgrade to enable." />
     );
     expect(asFragment()).toMatchSnapshot();
   });

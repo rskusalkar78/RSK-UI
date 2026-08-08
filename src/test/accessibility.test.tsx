@@ -1,7 +1,8 @@
 import { render as rtlRender, cleanup } from '@testing-library/react';
 import type { ReactElement } from 'react';
 import { describe, it, expect, afterEach, vi } from 'vitest';
-import { axe, toHaveNoViolations } from 'vitest-axe';
+import { axe } from 'vitest-axe';
+import * as matchers from 'vitest-axe/matchers';
 import { ThemeProvider } from '../providers/theme-provider';
 import {
   Button,
@@ -27,7 +28,7 @@ import {
   Label,
 } from '../components';
 
-expect.extend(toHaveNoViolations);
+expect.extend(matchers);
 
 vi.mock('framer-motion', async () => {
   const actual = await vi.importActual<typeof import('framer-motion')>('framer-motion');
@@ -71,7 +72,9 @@ describe('Accessibility — axe-core Tests', () => {
   describe('1. Button', () => {
     it('solid/default variant has no violations', async () => {
       const { container } = render(<Button variant="solid">Click me</Button>);
-      expect(await axe(container)).toHaveNoViolations();
+      const results = await axe(container);
+      console.log('AXE VIOLATIONS:', results.violations);
+      expect(results).toHaveNoViolations();
     });
 
     it('disabled state has no violations', async () => {
