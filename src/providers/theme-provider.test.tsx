@@ -1,6 +1,6 @@
 import { render, screen, act } from '@testing-library/react';
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useContext } from 'react';
 import { ThemeProvider, ThemeProviderContext, type ThemeProviderState } from './theme-provider';
 import { THEME_STORAGE_KEY, type Theme, type ResolvedTheme } from '../lib/theme-script';
 
@@ -71,13 +71,11 @@ function setupMatchMedia(
   hasAddEventListener: boolean = true
 ): MockMediaQuery {
   const mq = createMediaQueryMock(initialDark, hasAddEventListener);
-  if (typeof window.matchMedia !== 'function') {
-    Object.defineProperty(window, 'matchMedia', {
-      writable: true,
-      configurable: true,
-      value: () => mq as unknown as MediaQueryList,
-    });
-  }
+  Object.defineProperty(window, 'matchMedia', {
+    writable: true,
+    configurable: true,
+    value: vi.fn().mockImplementation(() => mq as unknown as MediaQueryList),
+  });
   const matchMediaSpy = vi
     .spyOn(window, 'matchMedia')
     .mockImplementation(() => mq as unknown as MediaQueryList);
@@ -116,22 +114,11 @@ function readContext(): ThemeProviderState {
 }
 
 function ContextCapture({ onCapture }: { onCapture: (s: ThemeProviderState) => void }) {
+  const value = useContext(ThemeProviderContext);
   useEffect(() => {
-    const unsub = ThemeProviderContext._currentValue;
-  }, []);
-  return (
-    <ThemeProviderContext.Consumer>
-      {(value) => {
-        const ref = useRef(value);
-        if (ref.current !== value) {
-          ref.current = value;
-          onCapture(value);
-        }
-        onCapture(value);
-        return null;
-      }}
-    </ThemeProviderContext.Consumer>
-  );
+    onCapture(value);
+  }, [value, onCapture]);
+  return null;
 }
 
 describe('ThemeProvider', () => {

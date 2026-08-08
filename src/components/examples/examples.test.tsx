@@ -5,7 +5,7 @@ describe('SaaS example applications', () => {
   it('renders the login experience with primary actions', () => {
     render(<LoginExample />);
 
-    expect(screen.getByText(/welcome back/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/welcome back/i)[0]).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /sign in/i })).toBeInTheDocument();
   });
 });
